@@ -1,0 +1,44 @@
+footer
+   - const anchorList = [
+   - {text: 'Как начать', link: '#start'},
+   - {text: 'Расчёт прибыли', link: '#profit'},
+   - {text: 'О компании', link: '#about'},
+   - {text: 'Частые вопросы', link: '#faq'},
+   - {text: 'Контакты', link: '#contact'},
+   - ]
+
+   .ui-container
+      img.planet(src="assets/img/icons/planet.svg", alt="planet")
+
+      .footer-col.main-col
+         a.logo(href="/") #[img(src="assets/img/logo/logo_light.svg", alt="IQL logo")]
+         p.logo-text Инновационные решения в криптосфере
+         a.social-link(href="https://t.me/iql_community", target="_blank")
+            i.i-telegram
+            span Наше сообщество
+      
+      .footer-col
+         h5.col-title IQL пул
+         ul
+            each item in anchorList
+               li #[a(href=item.link)= item.text]
+
+      .footer-col
+         h5.col-title IQL софт
+         a.footer-link(href='soft.html') Современные интеллектуальные решения любых задач в сфере криптовалюты
+
+      .footer-col
+         h5.col-title IQL магазин
+         a.footer-link(href='soft.html') Легальная продажа оборудования оптом и в розницу, нал / безнал / НДС
+
+      .footer-col
+         h5.col-title Информация
+         ul 
+            li #[a(href="https://t.me/iql_support_bot", target="_blank") Поддержка]
+            li #[a.btn_popup(data-form="contact") Обратная связь]
+            li #[a(href="", target="_blank") Условия использования]
+            li #[a(href="", target="_blank") Политика конфиденциальности]
+
+.copyright
+   .ui-container
+      p.text Все права защищены ©ООО “IQ Labs”

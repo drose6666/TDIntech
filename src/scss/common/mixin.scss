@@ -1,0 +1,41 @@
+// TODO Эффект наведения на ссылки (background)
+@mixin hoverLinks (
+   $hoverChild: false,
+   $color: #0AB5C5,
+   $height: 1px,
+) {
+   @if $hoverChild == false {
+      background: -webkit-gradient(linear,left top,left bottom,from($color));
+      background-size: 0% $height;
+      background-position: right 0% bottom;
+      background-repeat: no-repeat;
+      &:hover {
+         background-position: left 0% bottom;
+         background-size: 100% $height;
+      }
+   } @else {
+      & > .child {
+         background: -webkit-gradient(linear,left top,left bottom,from($color));
+         background-size: 0% $height;
+         background-position: right 0% bottom;
+         background-repeat: no-repeat;
+      }
+      &:hover > .child {
+         background-position: left 0% bottom;
+         background-size: 100% $height;
+      }
+   }
+}
+
+.hoverLinks { @include hoverLinks; }
+.hoverLinksChild { @include hoverLinks($hoverChild: true); }
+
+
+
+
+// TODO
+%flexBetween {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
