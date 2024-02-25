@@ -1,0 +1,279 @@
+.artemix-screen {
+   padding: var(--sectionG) 0;
+   container-name: artemixScreen;
+   container-type: inline-size;
+
+   .ui-container {
+      display: grid;
+      grid-template: auto / 1fr 1fr;
+      gap: clamp(80px, 1cqi, 120px);
+   }   
+
+
+   
+   // Левая колонка
+   .artemix-info {
+      position: relative;
+      container-name: artemixInfo;
+      container-type: inline-size;
+
+      &__img {
+         display: flex;
+         align-items: flex-start;
+         position: relative;
+
+         .img_left, .img_right {
+            max-width: 100%;
+            height: auto;
+            display: inline-block;
+            border-radius: var(--basicR);
+         }
+
+         .img_left {
+            margin-top: 140px;
+            max-width: 420px;
+         }
+
+         .img_right {
+            margin-left: -150px;
+         }
+      }
+   }
+
+   // Блок с возрастом
+   .artemix-age  {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      z-index: 1;
+      
+      .age {
+         font-family: var(--title_font);
+         font-size: clamp(80px, 15cqi, 110px);
+         font-weight: 700;
+         color: var(--dark);
+      }
+
+      .details {
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         // gap: 5px;
+
+         &__item {
+            font-family: var(--title_font);
+            font-size: clamp(23px, 4.5cqi,31px);
+            font-weight: 400;
+            color: var(--dark);
+            text-transform: uppercase;
+
+            &.bold {
+               font-size: clamp(43px, 8.8cqi, 63px);
+               font-weight: 700;
+            }
+         }
+      }
+   }
+
+   // Преимущества
+   .artemix-features {
+      padding: clamp(25px, 4cqi, 30px) clamp(25px, 5cqi, 40px);
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(40px, 7cqi, 60px);
+      border-radius: var(--basicR);
+      background: var(--light);
+      box-shadow: var(--selected_white_block);
+      width: max-content;
+      position: absolute;
+      bottom: -30px;
+      right: -20px;
+      z-index: 1;
+
+      .features-item {
+         display: flex;
+         align-items: center;
+         gap: 15px;
+
+         &__title {
+            font-size: clamp(18px, 3cqi, 22px);
+            font-weight: 600;
+            line-height: 120%;
+            max-width: min-content;
+         }
+      }
+   }
+
+   @container artemixInfo (max-width: 800px) {
+      .artemix-info {
+         .artemix-features {
+            padding: 25px;
+            right: auto;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
+   }
+
+   @container artemixInfo (max-width: 730px) {
+      .artemix-info {
+         &__img {
+            .img_left {
+               margin-top: clamp(90px, 20cqi, 140px);
+               max-width: clamp(300px, 59cqi, 420px);
+            }
+
+            .img_right {
+               margin-left: -20cqi;
+               max-width: clamp(360px, 68cqi, 489px);
+            }
+         }
+      }
+   }
+
+   
+
+
+
+   // TODO Правая колонка
+   .section-title {
+      margin-bottom: 40px;
+   }
+
+   .ui-text {
+      margin-bottom: 20px;
+      font-size: 15px;
+      max-width: 590px;
+   }
+
+   .artemix-descr {
+      align-self: center;
+      container-name: artemixDescr;
+      container-type: inline-size;
+   }
+
+   .artemix-brands-wrap {
+      margin-top: 50px;
+      margin-bottom: 70px;
+
+      .ui-title {
+         margin-bottom: 25px;
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 120%;
+         position: relative;
+         display: flex;
+         align-items: center;
+
+         span {
+            padding-right: 30px;
+            background: var(--body_bg);
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+         }
+
+         &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;  
+            background: var(--dark);
+            transform: translateY(-50%);
+         }
+      }
+      
+      .artemix-brands {
+         margin-top: 25px;
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         column-gap: clamp(10px, 5cqi, 50px);
+         row-gap: 15px;
+
+         li img {
+            max-width: 100%;
+            height: auto;
+         }
+      }
+   }
+
+   @media all and (max-width: 1200px) {
+      .artemix-info {
+         &__img {
+            .img_left {
+               margin-top: 0;
+               max-width: 100%;
+               height: auto;
+            }
+            .img_right {
+               display: none;
+            }
+         }
+      }
+
+      .artemix-age {
+         padding: 15px;
+         background: var(--body_bg);
+         border-bottom-right-radius: var(--basicR);
+         top: 0;
+      }
+   }
+
+   @media all and (max-width: 1000px) {
+      .ui-container {
+         grid-template: auto / 1fr;
+      }
+
+      .artemix-info {
+         &__img {
+            width: 100%;
+            height: 360px;
+
+            .img_left {
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
+         }
+      }
+
+      .artemix-features {
+         right: auto;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+
+      .artemix-age {
+         padding: 15px 20px;
+         border-bottom-right-radius: var(--basicR);
+         border-bottom-left-radius: var(--basicR);
+         top: 0;
+         left: 50%;
+         max-width: max-content;
+         width: 100%;
+         transform: translateX(-50%);
+      }
+
+      .ui-text {
+         max-width: 850px;
+      }
+   }
+
+   @media all and (max-width: 540px) {
+      .artemix-info {
+         .artemix-features {
+            padding: 20px 25px;
+            flex-direction: column;
+            align-items: center;
+            bottom: -60px;
+         }
+      }
+   }
+}

@@ -1,0 +1,41 @@
+// TODO Title
+.ui-title {
+   font-family: var(--title_font);
+   color: var(--dark);
+   text-transform: uppercase;
+
+   &.section-title {
+      margin-bottom: 60px;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 110%;
+      max-width: 475px;
+
+      &.light {
+         color: var(--light);
+      }
+
+      @media all and (max-width: 320px) {
+         font-size: 33px;
+      }
+   }
+}
+
+
+
+//  TODO text
+.ui-text {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 155%;
+   color: var(--text);
+
+   &.on_dark {
+      color: var(--text_on_dark);
+   }
+
+   &.selected {
+      font-weight: 700;
+      color: var(--dark);
+   }
+}

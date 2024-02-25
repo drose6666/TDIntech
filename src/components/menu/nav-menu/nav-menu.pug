@@ -1,0 +1,11 @@
+- const navMenu = [
+- {text: 'О нас', link: '#about'},
+- {text: 'Продукция', link: '#catalog'},
+- {text: 'Отзывы', link: '#reviews'},
+- {text: 'Контакты', link: '#contacts'},
+- ]
+
+nav.nav-menu 
+   ul
+      each item in navMenu
+         li: a(href=item.link)= item.text

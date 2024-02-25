@@ -1,0 +1,42 @@
+- let brandIndex = 1
+
+- const artemixFeatures = [
+- {title: 'собственный автопарк', icon: 'delivery'},
+- {title: 'собственное производство', icon: 'service'},
+- ]
+
+section.artemix-screen
+   .ui-container.lg
+      .artemix-info
+         .artemix-age 
+            strong.age 20
+            .details 
+               strong.details__item.bold +лет
+               span.details__item на рынке
+
+         .artemix-info__img
+            picture 
+               source(media="(max-width: 1000px)", srcset="assets/img/artemix/img_left_1000w.webp")
+               source(media="(max-width: 1200px)", srcset="assets/img/artemix/img_left_1200w.webp")
+               img.img_left(src="assets/img/artemix/img_left.webp", alt="Artemix")
+            img.img_right(src="assets/img/artemix/img_right.webp", alt="Artemix")
+
+            ul.artemix-features
+               each item in artemixFeatures
+                  li.features-item
+                     .vi-circle-icon: i(class=`i-${item.icon}`)
+                     h6.features-item__title.ui-title= item.title
+
+
+      .artemix-descr
+         h2.ui-title.section-title Что такое Артемикс?
+         p.ui-text Артемикс - Компания по производству сухих строительных смесей и не только. Это команда профессионалов, создающая качественные материалы по современным технологиям. Вся продукция «Артемикс» выпускается только по требованиям соответствующих ГОСТов и перед поставкой проходит тщательный внутренний контроль качества. 
+         p.ui-text Продукция Артемикс прошла многолетнее испытание на многих стройках Санкт-Петербурга, среди которых ЖК «Балтийская Жемчужина», ЖК «Северная Долина», ЖК «Солнечный Город», ЖК Горного института на Васильевском острове, ЖК «Кудрово» и многие другие.
+
+         .artemix-brands-wrap
+            h5.ui-title: span Бренды, с которыми сотрудничает АРТЕМИКС
+            ul.artemix-brands
+               while brandIndex <= 6
+                  li: img(src=`assets/img/artemix/brand_${brandIndex++}.webp`, alt="")
+
+         button.ui-btn.btn_dark Сделать заказ

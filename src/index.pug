@@ -1,32 +1,24 @@
 extends layouts/layout-default
 
-block head
-   | ТД Интех
-   
-   - const menuItems = [
-   - {link: '#start', text: 'Как начать'}, 
-   - {link: '#profit', text: 'Расчёт прибыли'}, 
-   - {link: '#about', text: 'О нас'}, 
-   - {link: '#faq', text: 'FAQ'}, 
-   - {link: '#contact', text: 'Контакты'}
-   - ]
+block main 
+   section.hero-screen
+      .hero-content
+         .hero-content__container.ui-container
+            .hero-content__titles
+               span.decor-el #[strong Единственный]
+               h1.hero-content__title официальный #[br] дилер продукции #[strong Артемикс]
+               span.decor-el #[strong В Калининграде]
+            
+            .btn-group 
+               button.ui-btn.btn_action Сделать заказ
+               a.ui-btn.btn_outline(href="#about") О нас
+         
+         .social.words.ui-container.lg 
+            a.social__link(href="/" target="_blank") Telegram
+            a.social__link(href="/" target="_blank") Whatsapp
 
-block header 
-  
-block main
-
-block additional
-   //- include components/swimming-chat/swimming-chat
-   //- include components/popups/popup-form/popup-form
-   //- include components/popups/popup-review/popup-review
-
-
-
-
-
-
-
-
+   include components/screen/about-screen/about-screen
+   include components/screen/artemix-screen/artemix-screen
 
 
 

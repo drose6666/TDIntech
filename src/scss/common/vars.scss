@@ -1,7 +1,37 @@
 :root {
-
    // Fonts
-   // --basic_font: 'Futura New', sans-serif;
-   --icon_font: iql;
-   --basic_font_size: 17px;
+   --icon_font: TDIntech;
+   --title_font: Oswald, sans-serif;
+   --text_font: 'PT Sans Caption', sans-serif;
+
+   // Colors
+   --dark: #1B1F22;
+   --darkest: #161A1D;
+   --bg_on_dark: #2F3336;
+   --border_dark: #3B434A;
+   --text: #7C7C7C;
+   --text_on_dark: #A9A9A9;
+   --action: #FAAB21;
+   --action_hover: #F5D378;
+   --light: #fff;
+   --body_bg: #F5F5F7;
+
+   // Shadows
+   --basic_white_block: 0px 10px 16px 0px rgba(0, 0, 0, 0.03);
+   --selected_white_block: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+   --product_info_white_block: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+   --btn_dark: 0px 10px 16px 0px rgba(0, 0, 0, 0.2);
+
+   // Gradients
+   --product_card_bg: linear-gradient(180.00deg, rgb(247, 235, 214),rgb(232, 232, 232) 84.5%);
+
+   // Radius
+   --basicR: 10px;
+   --mdR: 20px;
+   --xsR: 5px;
+   --controlR: 50px;
+   --circleR: 50%;
+
+   // Gutters
+   --sectionG: 100px;
 }

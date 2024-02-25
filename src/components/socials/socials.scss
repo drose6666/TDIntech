@@ -1,0 +1,25 @@
+.social {
+   display: flex;
+   align-items: center;
+   gap: clamp(40px, 5cqi, 70px);
+
+   &__link {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--light);
+   }
+
+   &.words {
+      // margin-top: 100px;
+      margin-bottom: 30px;
+      width: 100%;
+
+      @media all and (max-width: 400px) {
+        justify-content: center;
+      }
+
+      @media all and (max-height: 800px) {
+         margin-top: 100px;
+      }
+   }
+}

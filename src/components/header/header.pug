@@ -1,26 +1,13 @@
 header 
-   include header-top/header-top
-      block headerTop
-   
-   .header-bottom
-      .ui-container 
-         .burger #[span]
-         a.logo(href="/") #[img(src="assets/img/logo/logo_light.svg", alt="IQL logo")]
+   .ui-container.lg 
+      .header-mobile-wrap
+         .ui-burger: span
+         a.logo(href="/"): img(src="assets/img/logo/logo_light.svg")
 
-         nav.header-menu 
-            ul 
-               each item in menuItems
-                  li 
-                     a(href=item.link)= item.text
+      include ../menu/nav-menu/nav-menu
+      include ../phone/phone
+         block phone
+            p.btn_call Заказать звонок
 
-         .header-action 
-            div.header-bottom__link.btn_popup(data-form="call")
-               i.i-phone 
-               span Заказать звонок
-               
-            a.social-item.social-tooltip(href="https://t.me/iql_support_bot", target="_blank")
-               i.i-telegram
-               .tooltip #[p Задать вопрос]
-   
 
-   
+
