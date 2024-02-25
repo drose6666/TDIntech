@@ -161,15 +161,15 @@
 
       .ui-title {
          margin-bottom: 25px;
-         font-size: 16px;
-         font-weight: 500;
-         line-height: 120%;
          position: relative;
          display: flex;
          align-items: center;
 
          span {
             padding-right: 30px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 120%;
             background: var(--body_bg);
             position: relative;
             display: inline-block;
@@ -224,8 +224,11 @@
    }
 
    @media all and (max-width: 1000px) {
+      padding-top: 0;
+
       .ui-container {
          grid-template: auto / 1fr;
+         gap: clamp(100px, 1cqi, 120px);
       }
 
       .artemix-info {
@@ -261,6 +264,10 @@
          transform: translateX(-50%);
       }
 
+      .artemix-brands-wrap .ui-title span {
+         font-size: 18px;
+      }
+
       .ui-text {
          max-width: 850px;
       }
@@ -269,9 +276,9 @@
    @media all and (max-width: 540px) {
       .artemix-info {
          .artemix-features {
-            padding: 20px 25px;
+            padding: 15px 20px;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             bottom: -60px;
          }
       }
