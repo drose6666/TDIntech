@@ -2,6 +2,10 @@
    padding: var(--sectionG) 0;
    container-type: inline-size;
 
+   .section-title {
+      max-width: 475px;
+   }
+
    .description {
       display: grid;
       grid-template: auto / minmax(380px, 475px) minmax(380px, 730px);

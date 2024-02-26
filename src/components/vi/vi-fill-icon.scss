@@ -1,0 +1,87 @@
+%viFillIconHover {
+   $size: 77.78%;
+
+   &:before {
+      width: $size;
+      height: $size;
+   }
+}
+
+// NOTE общие стили для круглых иконок
+.vi-fill-icon {
+   $size: 60px;
+   $bg: var(--light);
+
+   width: $size;
+   height: $size;
+   flex: 0 0 $size;
+   border-radius: var(--circleR);
+   background: transparent;
+   border: 1px solid transparent;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   position: relative;
+   transition: all .3s ease;
+
+   i {
+      font-size: 25px;
+      color: var(--dark);
+      position: relative;
+      transition: inherit;
+   }
+
+   &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: $bg;
+      border-radius: var(--circleR);
+      transition: inherit;
+   }
+
+   // В карточке товара
+   &.product_icon {
+      $bg: var(--dark);
+
+      position: absolute;
+      right: 15px;
+      top: -45px;
+      box-shadow: var(--btn_dark);
+
+      i {
+         font-size: 20px;
+         color: var(--action);
+      }
+
+      &:before {
+         background: $bg;
+      }
+
+      &:hover {
+         border-color: $bg;
+         box-shadow: none;
+            
+         @extend %viFillIconHover;
+      }
+   }
+}
+
+
+// В секции artemix-screen
+.action-screen {
+   .hover_parent {
+      &:hover {
+         .vi-fill-icon {
+            border-color: var(--light);
+            
+            @extend %viFillIconHover;
+         }
+      }
+   }
+}

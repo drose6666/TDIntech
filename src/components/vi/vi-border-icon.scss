@@ -1,15 +1,23 @@
-@mixin viCircleIcon (
-   $size: 90px,
-   $bg: var(--dark),
-   $iconColor: var(--action),
-   $iconSize: 35px,
-) {
+%viBorDericonHover {
+   transform: translateY(-3px);
+   border-color: transparent;
+
+   &:before {
+      width: 100%;
+      height: 100%;
+   }
+}
+
+// NOTE общие стили для круглых иконок
+.vi-border-icon {
+   $size: 90px;
+
    width: $size;
    height: $size;
    flex: 0 0 $size;
-   background: transparent;
-   border: 1px solid $bg;
    border-radius: var(--circleR);
+   border: 1px solid var(--dark);
+   background: transparent;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -17,8 +25,8 @@
    transition: all .3s ease;
 
    i {
-      font-size: $iconSize;
-      color: $iconColor;
+      font-size: 35px;
+      color: var(--action);
       position: relative;
       transition: inherit;
    }
@@ -31,43 +39,32 @@
       transform: translate(-50%, -50%);
       width: 77.78%;
       height: 77.78%;
-      background: $bg;
+      background: var(--dark);
       border-radius: var(--circleR);
       transition: inherit;
    }
 }
 
-// TODO стили для hover
-%viCircleIconHover {
-   .vi-circle-icon {
-      border-color: transparent;
-
-      &:before {
-         width: 100%;
-         height: 100%;
+// NOTE Hover-parent (родитель border-icon) - активатор hover border-icon
+.hover_parent {
+   &:hover {
+      .vi-border-icon {
+         @extend %viBorDericonHover;
       }
    }
 }
 
-// TODO Базовый (в блоке с преимуществами #about)
-.vi-circle-icon {
-   @include viCircleIcon
-}
-
-.features .features__item {
-   .vi-circle-icon {
+.about-screen {
+   .vi-border-icon {
       margin-top: -40px;
    }
-
-   &:hover {
-      @extend %viCircleIconHover;
-   }
 }
+
 
 
 // TODO В секции с описаием АРТЕМИК блок с преимуществами
-.features-item {
-   .vi-circle-icon {
+.artemix-screen {
+   .vi-border-icon {
       $size: clamp(65px, 10cqi, 80px);
 
       width: $size;
@@ -78,9 +75,5 @@
          font-size: clamp(24px, 3.8cqi, 30px);
       }
    }
-
-   &:hover {
-      @extend %viCircleIconHover;
-   }
 }
- 
+

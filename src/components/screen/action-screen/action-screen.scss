@@ -29,6 +29,7 @@
          display: flex;
          align-items: center;
          gap: 15px;
+         transition: all .3s ease;
 
          .icon {
             $size: 60px;
@@ -53,6 +54,29 @@
             font-weight: 700;
             color: var(--light);
             white-space: nowrap;
+            position: relative;
+            transition: inherit;
+         
+            &:after {
+               content: '';
+               position: absolute;
+               left: 0;
+               bottom: -5px;
+               width: 0;
+               height: 1px;
+               background: var(--light);
+               transition: inherit;
+            }
+         }
+
+         &:hover {
+            span {
+               color: var(--action);
+
+               &:after {
+                  width: 100%;
+               }
+            }
          }
       }
    }

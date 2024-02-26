@@ -19,9 +19,9 @@ section.about-screen#about
    .ui-container.lg
       ul.features 
          each item in features
-            li.features__item
+            li.features__item.hover_parent
                .features__item__container 
-                  .vi-circle-icon: i(class=`i-${item.icon}`)
+                  .vi-border-icon: i(class=`i-${item.icon}`)
                   h3.ui-title.features__item__title= item.title
                   p.ui-text.features__item__text= item.text
 
