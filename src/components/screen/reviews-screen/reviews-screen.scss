@@ -1,0 +1,20 @@
+.reviews-screen {
+   padding-top: var(--lg_sectionG);
+   padding-bottom: var(--sectionG);
+
+   .title-wrap {
+      margin-bottom: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+   }
+
+   .section-title {
+      margin-bottom: 0;
+   }
+
+   .ui-text {
+      max-width: 610px;
+   }
+}

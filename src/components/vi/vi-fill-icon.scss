@@ -48,19 +48,27 @@
    // В карточке товара
    &.product_icon {
       $bg: var(--dark);
+      $size: clamp(55px, 5cqb, 60px);
 
       position: absolute;
       right: 15px;
       top: -45px;
+      width: $size;
+      height: $size;
+      flex: 0 0 $size;
       box-shadow: var(--btn_dark);
 
       i {
-         font-size: 20px;
+         font-size: clamp(15px, 8cqi, 20px);
          color: var(--action);
       }
 
       &:before {
+         $sizeB: calc(100% + 2px);
+
          background: $bg;
+         width: $sizeB;
+         height: $sizeB;
       }
 
       &:hover {
