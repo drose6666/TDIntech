@@ -1,0 +1,28 @@
+- const contactList = [
+- {text: 'example.intech@gmail.com', icon: 'email', link: 'mailto:example.intech@gmail.com'},
+- {text: '+7 968 526 000 7', icon: 'phone', link: 'tel:+79685260007'},
+- {text: 'Санкт-Петербург, М. Фрунзенская 241а', icon: 'marker'},
+- ]
+
+section.contact-screen#contact
+   .ui-container
+      .map#map
+
+      .title-wrap
+         h2.ui-title.section-title.light наши контакты
+         p.ui-text.subtitle 
+
+      .contact-container
+         include ../../forms/contact-form/contact-form
+
+         ul.contact-list
+            each item in contactList
+               if item.link
+                  li.contact-item
+                     a(href=item.link)
+                        .vi-border-icon.action: i(class=item.icon)
+                        span= item.text
+               else 
+                  li.contact-item(class={address: !item.link})
+                     .vi-border-icon.action: i(class=item.icon)
+                     span= item.text
