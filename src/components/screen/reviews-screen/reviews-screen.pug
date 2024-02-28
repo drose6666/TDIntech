@@ -7,26 +7,29 @@
 section.reviews-screen#reviews
    .ui-container
       .title-wrap
-         h2.ui-title.section-title 
-         p.ui-text 
+         h2.ui-title.section-title Что говорят о нас наши клиенты
+         p.ui-text.subtitle Мы глубоко ценим наших клиентов, поэтому всегда предоставляем только качественный сервис, проявляя интерес к каждому покупателю. Наша команда всегда готова прийти на помощь 
       
       .reviews-container.swiper-container
          .swiper#reviews-swiper
             .swiper-wrapper
-               .swiper-slide
-                  each item in reviews
+               each item in reviews
+                  .swiper-slide
                      .review
                         h5.review__title= item.title
-                        p.review__text.ui-text= item.text
-                        .read-more #[span Читать польностью] #[i.i-angle_right]
+                        .review__text-wrap
+                           p.review__text.ui-text= item.review
+                           if item.review.length > 330
+                              .read-more #[span Читать польностью] #[i.i-angle_right]
 
                         .author
                            .author__img: img(src=`assets/img/reviews/avatar_${item.id}.webp`, alt=item.author.name) 
                            .author__details
                               h6.author__name= item.author.name
                               span.author__position= item.author.position
-                           
-
+         .swiper-arrows    
+            .swiper-arrow.dark.prev
+            .swiper-arrow.dark.next
 
 
 

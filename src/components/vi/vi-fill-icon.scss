@@ -1,7 +1,7 @@
 %viFillIconHover {
    $size: 77.78%;
 
-   &:before {
+   &:after {
       width: $size;
       height: $size;
    }
@@ -29,10 +29,11 @@
       font-size: 25px;
       color: var(--dark);
       position: relative;
+      z-index: 1;
       transition: inherit;
    }
 
-   &:before {
+   &:after {
       content: '';
       position: absolute;
       top: 50%;
@@ -63,7 +64,7 @@
          color: var(--action);
       }
 
-      &:before {
+      &:after {
          $sizeB: calc(100% + 2px);
 
          background: $bg;

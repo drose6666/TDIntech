@@ -73,6 +73,12 @@
 
    @media all and (max-height: 820px) {
       height: auto;
+
+      .hero-content {
+         &__container {
+            margin-top: 150px;
+         }
+      }
    }
 
    @media all and (max-width: 400px) {
