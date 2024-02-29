@@ -1,24 +1,25 @@
-form#form(method="POST", action="assets/libs/telegram.php")
-   input(type="text", name="subject", value="Сообщение из формы 'Обратная связь'")
+form.form#contact-form(method="POST", action="assets/libs/telegram.php")
+   input(type="hidden", name="subject", value="Сообщение из формы 'Обратная связь'")
 
-   .form-item
-      input.field(type="text", name="user_name", inputmode="text", autocomplete="given-name", placeholder="Имя", data-required, data-type="name")
-      span.error-message
+   .grid-item.c_2 
+      .form-item
+         input.ui-field(type="text", name="user_name", inputmode="text", autocomplete="given-name", placeholder="Имя", data-required, data-type="name")
+         span.error-message
+
+      .form-item 
+         input.ui-field(type="tel", name="user_tel", inputmode="tel", autocomplete="tel", placeholder="Телефон", data-required, data-type="tel")
+         span.error-message
 
    .form-item 
-      input.field(type="tel", name="user_tel", inputmode="tel", autocomplete="tel", placeholder="Телефон", data-required, data-type="tel")
-      span.error-message
-
-   .form-item 
-      input.field(type="email", name="user_email", inputmode="email", autocomplete="email", placeholder="Email", data-type="email")
+      input.ui-field(type="email", name="user_email", inputmode="email", autocomplete="email", placeholder="Email", data-type="email")
       span.error-message
 
    .form-item
-      textarea.field(name="user_message", placeholder="Сообщение", data-required, data-type="message")
+      textarea.ui-field(name="user_message", placeholder="Сообщение", data-required, data-type="message")
       span.error-message
 
-   .form-item
+   .form-submit
       button.ui-btn.btn_action(type="submit") Отправить
       p.text Нажимая на кнопку "Отправить" вы соглащаетесь с #[strong политикой конфиденциальности] 
 
-p.message-status
+//- p.message-status

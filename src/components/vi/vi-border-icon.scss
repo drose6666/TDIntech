@@ -37,11 +37,39 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 77.78%;
-      height: 77.78%;
+      width: 77%;
+      height: 77%;
       background: var(--dark);
       border-radius: var(--circleR);
       transition: inherit;
+   }
+
+   &.action {
+      $size: 65px;
+      
+      width: $size;
+      height: $size;
+      flex: 0 0 $size;
+      border: 1px solid var(--border_dark);
+
+      i { 
+         font-size: 22px;
+         color: var(--dark); 
+      }
+
+      &:before { background: var(--action); }
+
+      @media all and (max-width: 340px) {
+         $size: 50px;
+      
+         width: $size;
+         height: $size;
+         flex: 0 0 $size;
+
+         i {
+            font-size: 18px;
+         }
+      }
    }
 }
 
@@ -50,6 +78,17 @@
    &:hover {
       .vi-border-icon {
          @extend %viBorDericonHover;
+
+         &.action {
+            border-color: var(--light);
+            transform: none;
+
+            &:before {
+               width: 77%;
+               height: 77%;
+               background: var(--light);
+            }
+         }
       }
    }
 }
@@ -76,4 +115,7 @@
       }
    }
 }
+
+
+
 

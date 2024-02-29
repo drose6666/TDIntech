@@ -1,18 +1,38 @@
-.social {
+.socials {
    display: flex;
    align-items: center;
-   gap: clamp(40px, 5cqi, 70px);
-
+   gap: 20px;
+   
    &__link {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--light);
+      display: inline-block;
+      transition: all .2s ease;
+
+      i {
+         font-size: 17px;
+         color: var(--light);
+         transition: inherit;
+      }
+
+      &:hover {
+         transform: translateY(-3px);
+
+         i {
+            color: var(--action);
+         }
+      }
    }
 
+
    &.words {
-      // margin-top: 100px;
       margin-bottom: 30px;
       width: 100%;
+      gap: clamp(40px, 5cqi, 70px);
+
+      .socials__link {
+         font-size: 16px;
+         font-weight: 400;
+         color: var(--light);
+      }
 
       @media all and (max-width: 400px) {
         justify-content: center;

@@ -5,7 +5,7 @@
 - {text: 'Контакты', link: '#contacts'},
 - ]
 
-nav.nav-menu 
+nav.nav-menu(class={footerMenu: darkMenu == true})
    ul
       each item in navMenu
          li: a(href=item.link)= item.text

@@ -1,0 +1,33 @@
+footer {
+   padding: 20px 0;
+   background: var(--darkest);
+
+   .footer-menu-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+   }
+
+   .logo {
+      max-width: 160px;
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+   }
+
+   .copyright {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text_on_dark);
+   }
+
+   @media all and (max-width: 800px) {
+      .logo {
+         max-width: 120px;
+      }
+   }
+}

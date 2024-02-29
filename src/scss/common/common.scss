@@ -4,6 +4,7 @@
 
 // Components
 @import '../../components/header/header';
+@import '../../components/footer/footer';
 @import '../../components/socials/socials';
 @import '../../components/menu/nav-menu/nav-menu';
 @import '../../components/phone/phone';
@@ -11,6 +12,7 @@
 // UI
 @import '../../components/ui/ui-button/ui-button';
 @import '../../components/ui/ui-burger/ui-burger';
+@import '../../components/ui/ui-field/ui-field';
 @import '../../components/ui/typography/typography';
 
 // VI
@@ -28,6 +30,7 @@
    scrollbar-color: var(--action), var(--ui_dark) ; /* «цвет ползунка» «цвет полосы скроллбара» */
    scrollbar-width: thin ;/* толщина */
    box-sizing: border-box;
+   font-weight: 400;
 }
 
 // Custom scrollbar for webKit
@@ -57,10 +60,9 @@ html {
 }
 
 body {
-   font-family: var(--text_font);
-   font-weight: 400;
    background: var(--body_bg);
    position: relative;
+   font-family: var(--text_font);
 
    &.no-scroll {
       overflow: hidden;

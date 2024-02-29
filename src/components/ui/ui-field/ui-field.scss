@@ -1,0 +1,130 @@
+.ui-field {
+   padding: 16px 25px;
+   border-radius: var(--controlR);
+   background: var(--bg_on_dark);
+   font-family: var(--text_font);
+   font-size: 15px;
+   font-weight: 400;
+   color: var(--light);
+   width: 100%;
+   height: 60px;
+   transition: 
+      background-color .2s ease,
+      color .2s ease;
+
+   &::placeholder {
+      color: var(--text_on_dark);
+   }
+
+   &:hover {
+      background: var(--bg_on_dark);
+   }
+
+   &:focus {
+      outline: 1px solid var(--text);
+      background: transparent;
+   }
+}
+
+textarea.ui-field {
+   min-height: 120px;
+   border-radius: 25px;
+}
+
+.form-item {
+   position: relative;
+
+   .error-message {
+      position: relative;
+      top: 2px;
+      color: var(--error);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 100%;
+      display: none;
+   }
+
+   &.error {
+      .ui-field {
+         background: var(--error_bg);
+         color: var(--error);
+
+         &::placeholder {
+            color: var(--error_bg);
+         }
+      }
+
+      .error-message {
+         display: inline-block;
+      }
+   }
+}
+
+.form-submit {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   gap: 40px;
+
+   .text {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 125%;
+      color: var(--text);
+      max-width: 325px;
+
+      strong {
+         color: var(--light);
+         text-decoration: underline;
+         text-decoration-skip-ink: none;
+         cursor: pointer;
+         transition: all .1s ease;
+
+         &:hover {
+            color: var(--action);
+         }
+      }
+   }
+}
+
+// Form - базовые стили
+.form {
+   display: grid;
+   grid-template: auto / 1fr;
+   gap: var(--filedsG);
+   container: formC / inline-size;
+
+   .grid-item {
+      display: grid;
+      gap: var(--filedsG);
+
+      &.c_2 {
+         grid-template: auto / 1fr 1fr;
+      }
+   }
+
+   @container (max-width: 595px) {
+      .grid-item {
+         &.c_2 {
+            grid-template: auto / 1fr;
+         }
+      }
+   }
+
+   @container (max-width: 420px) {
+      .form-submit {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 10px;
+
+         .text {
+            max-width: 100%;
+         }
+
+         .ui-btn {
+            max-width: 250px;
+            width: 100%;
+         }
+      }
+   }
+}

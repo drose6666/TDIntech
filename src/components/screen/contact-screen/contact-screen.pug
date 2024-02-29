@@ -1,28 +1,36 @@
 - const contactList = [
 - {text: 'example.intech@gmail.com', icon: 'email', link: 'mailto:example.intech@gmail.com'},
 - {text: '+7 968 526 000 7', icon: 'phone', link: 'tel:+79685260007'},
-- {text: 'Санкт-Петербург, М. Фрунзенская 241а', icon: 'marker'},
 - ]
 
 section.contact-screen#contact
    .ui-container
       .map#map
+         iframe(
+            loading="lazy"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A778798b42af6fcca02c52435250b79f109fd32b512f6500d73c4b82d5c04a79c&amp;source=constructor"
+            width="100%"
+            height="100%"
+            frameborder="0"
+         )
 
       .title-wrap
          h2.ui-title.section-title.light наши контакты
-         p.ui-text.subtitle 
+         p.ui-text.subtitle Если у вас остались вопросы, вы можете задать их, заполнив форму ниже. Или напишите нам в мессенджере. Мы обязательно свяжемся с вами как можно быстрее
 
       .contact-container
          include ../../forms/contact-form/contact-form
 
          ul.contact-list
             each item in contactList
-               if item.link
-                  li.contact-item
-                     a(href=item.link)
-                        .vi-border-icon.action: i(class=item.icon)
-                        span= item.text
-               else 
-                  li.contact-item(class={address: !item.link})
-                     .vi-border-icon.action: i(class=item.icon)
+               li.contact-item.hover_parent
+                  a(href=item.link)
+                     .vi-border-icon.action: i(class=`i-${item.icon}`)
                      span= item.text
+
+            li.contact-item.hover_parent.address
+               .vi-border-icon.action: i.i-marker
+               span 
+                  | Санкт-Петербург,
+                  br
+                  | М. Фрунзенская 241а
