@@ -1,13 +1,17 @@
-header 
+header.sticky 
    .ui-container.lg 
       .header-mobile-wrap
          .ui-burger: span
-         a.logo(href="/"): img(src="assets/img/logo/logo_light.svg")
+         a.logo(href="/"): img(src="assets/img/logo/logo_color.svg")
 
       include ../menu/nav-menu/nav-menu
-      include ../phone/phone
-         block phone
-            p.btn_call Заказать звонок
+
+      .phone-wrap
+         a.header-phone(href="tel:+79685260007")
+            i.i-phone
+            span +7 968 526 000 7
+
+         .btn_call.open_call Заказать звонок
 
 
 

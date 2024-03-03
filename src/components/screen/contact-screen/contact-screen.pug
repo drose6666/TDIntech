@@ -1,9 +1,6 @@
-- const contactList = [
-- {text: 'example.intech@gmail.com', icon: 'email', link: 'mailto:example.intech@gmail.com'},
-- {text: '+7 968 526 000 7', icon: 'phone', link: 'tel:+79685260007'},
-- ]
+- const contactsScreenLinks = true
 
-section.contact-screen#contact
+section.contact-screen#contacts
    .ui-container
       .map#map
          iframe(
@@ -20,17 +17,5 @@ section.contact-screen#contact
 
       .contact-container
          include ../../forms/contact-form/contact-form
-
-         ul.contact-list
-            each item in contactList
-               li.contact-item.hover_parent
-                  a(href=item.link)
-                     .vi-border-icon.action: i(class=`i-${item.icon}`)
-                     span= item.text
-
-            li.contact-item.hover_parent.address
-               .vi-border-icon.action: i.i-marker
-               span 
-                  | Санкт-Петербург,
-                  br
-                  | М. Фрунзенская 241а
+         include ../../contacts-links/contacts-links
+            block contactLinks

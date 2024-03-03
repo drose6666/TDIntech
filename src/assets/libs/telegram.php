@@ -11,8 +11,8 @@ $phone = $_POST['user_tel'] ?? '';
 $email = $_POST['user_email'] ?? '';
 $message = $_POST['user_message'] ?? '';
 $subject = $_POST['subject'] ?? '';
-$token = "6452485511:AAGdbcJy1pMMmPy4X6EhRv1NHBdG379tD4c";  // Замените на свой токен
-$chat_id = "-1001830194755";  // Замените на свой chat_id
+$token = "6998790140:AAGoHDOfx3GhKltf5vKlzLxsou1n5JJOE58";  // Замените на свой токен
+$chat_id = "-1002104703209";  // Замените на свой chat_id
 
 $data = [
     '<b>Тема: </b>' => $subject,

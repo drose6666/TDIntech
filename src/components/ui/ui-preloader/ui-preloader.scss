@@ -1,0 +1,62 @@
+@keyframes ldio-bkcm2zea1ar {
+   0% { transform: rotate(0deg) }
+   50% { transform: rotate(180deg) }
+   100% { transform: rotate(360deg) }
+}
+
+.preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: var(--dark);
+   z-index: 3;
+   transition: all 0.2s ease-out;
+   
+   &.hide {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease-out;
+   }
+}
+@keyframes ldio-q8lh4k68ww {
+   0% { transform: rotate(0deg) }
+   50% { transform: rotate(180deg) }
+   100% { transform: rotate(360deg) }
+}
+
+.ldio-q8lh4k68ww div {
+   position: absolute;
+   animation: ldio-q8lh4k68ww 0.8s linear infinite;
+   width: 88px;
+   height: 88px;
+   top: 11px;
+   left: 11px;
+   border-radius: 50%;
+   box-shadow: 0 4px 0 0 var(--action);
+   transform-origin: 44px 45.1px;
+}
+
+.loadingio-spinner-eclipse-e1yqoh6tcuv {
+   width: 110px;
+   height: 110px;
+   display: inline-block;
+   overflow: hidden;
+}
+
+.ldio-q8lh4k68ww {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   transform: translateZ(0) scale(1);
+   backface-visibility: hidden;
+   transform-origin: 0 0;
+}
+
+.ldio-q8lh4k68ww div {
+   box-sizing: content-box;
+}

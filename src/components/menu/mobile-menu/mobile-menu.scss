@@ -1,0 +1,120 @@
+.mobile-menu-wrap {
+   position: fixed;
+   top: 0;
+   left: 0;
+   max-width: 400px;
+   width: 100%;
+   height: 100%;
+   background: #121617;
+   overflow: auto;
+   z-index: 3;
+   transform: translateX(-450px);
+   transition: all .4s ease;
+
+   &::-webkit-scrollbar {
+      display: none;
+   }
+   
+   &.active {
+      transform: none;
+   }
+
+   .mobile-menu {
+      padding: 40px clamp(20px, 10cqi, 40px);
+      background: var(--dark);
+      max-width: 450px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+   }
+
+   .mobile-logo {
+      max-width: 60px;
+      display: inline-block;
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+   }
+
+
+   // Меню
+   .mobile-nav {
+      margin-top: 60px;
+      margin-bottom: 90px;
+
+      ul {
+         li {
+            &:not(:last-child) {
+               margin-bottom: 35px;
+            }
+         }
+
+         a {
+            font-family: var(--title_font);
+            font-size: 45px;
+            font-weight: 500;
+            color: var(--light);
+            text-transform: uppercase;
+            position: relative;
+            transition: all .2s ease;
+
+            &:after {
+               content: '';
+               position: absolute;
+               bottom: 0;
+               left: 0;
+               width: 0;
+               height: 1px;
+               background: var(--light);
+               transition: inherit;
+            }
+
+            &:hover {
+               color: var(--action);
+
+               &:after {
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+
+
+   // Кнопки
+   .btn-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+
+      .ui-btn {
+         max-width: 300px;
+         width: 100%;
+      }
+   }
+
+   // Contact links
+   .contact-links {
+      margin: 60px 0;
+   }
+
+   .socials {
+      margin: 0;
+   }
+
+   @media all and (max-width: 400px) {
+      .socials {
+         justify-content: flex-start;
+      }
+   }
+
+   @media all and (max-width: 340px) {
+      .mobile-menu {
+         padding: 40px 15px;
+      }
+   }
+
+}

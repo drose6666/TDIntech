@@ -17,6 +17,9 @@
    --body_bg: #F5F5F7;
    --error: #A40000;
    --error_bg: #D79393;
+   --success: #0FB800;
+   --success_bg: #D2F4CF;
+   --overlay: rgba(27, 31, 34, .8);
 
    // Shadows
    --basic_white_block: 0px 10px 16px 0px rgba(0, 0, 0, 0.03);
@@ -35,7 +38,7 @@
    --circleR: 50%;
 
    // Gutters
-   --sectionG: 100px;
+   --sectionG: 110px;
    --lg_sectionG: 170px;
    --filedsG: 20px;
 }

@@ -5,12 +5,39 @@
    
    &__link {
       display: inline-block;
-      transition: all .2s ease;
+      transition: 
+         transform .2s ease,
+         opacity .5s ease,
+         visibility .5s ease,
+         translate .5s ease;
 
       i {
          font-size: 17px;
          color: var(--light);
-         transition: inherit;
+         transition: all .2s ease;
+      }
+
+      &.animate {
+         opacity: 0;
+         visibility: hidden;
+         translate: -30px;
+      }
+
+      $j: .5s;
+      @for $i from 1 through 2 {
+         $j: $j + 0.1s;
+         &:nth-child(#{$i}) {
+            &.animation {
+               opacity: 1;
+               visibility: visible;
+               translate: none;
+               transition: 
+                  transform .2s ease,
+                  opacity .5s ease $j,
+                  visibility .5s ease $j,
+                  translate .5s ease $j;
+            }
+         }
       }
 
       &:hover {
@@ -26,12 +53,35 @@
    &.words {
       margin-bottom: 30px;
       width: 100%;
-      gap: clamp(40px, 5cqi, 70px);
+      gap: clamp(50px, 5cqi, 70px);
 
       .socials__link {
          font-size: 16px;
          font-weight: 400;
          color: var(--light);
+         position: relative;
+
+         &:after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--light);
+            transition: all .2s ease;
+         }
+
+         &:hover {
+            color: var(--action);
+            transform: none;
+
+            &:after {
+               width: 100%;
+            }
+         }
+
+
       }
 
       @media all and (max-width: 400px) {

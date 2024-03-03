@@ -16,14 +16,84 @@
 - {id: '2', title: 'Клей для плитки Усиленный АртеМикс (25кг)', descr: 'Для облицовки поверхностей всеми видами керамической плитки, в том числе керамогранитом, внутри и снаружи зданий.'},
 - {id: '3', title: 'Штукатурка гипсовая «Гипсопласт» АртеМикс', descr: 'Для машинного оштукатуривания стен и потолков из бетонных, кирпичных, газо- и пенобетонных оснований внутри сухих'},
 - {id: '4', title: 'Штукатурка гипсовая «Базовая» Артемикс 30кг', descr: 'Для высококачественного оштукатуривания стен и потолков внутри помещений ручным и машинным способом'},
+- {id: '5', title: 'Кладочный раствор М100 АртеМикс (25кг)', descr: 'Для кладки глиняного и силикатного кирпича. Для наружных и внутренних работ'},
+- {id: '6', title: 'Кладочный раствор М150 АртеМикс (25кг)', descr: 'Предназначен для кладки керамического и силикатного кирпича, строительных блоков (пеноблоков, шлакоблоков)'},
+- {id: '7', title: 'Цементно-известковая штукатурка «Мастерпласт» АртеМикс 25кг', descr: 'Предназначена для грубого выравнивания стен в сухих и влажных помещениях из бетона, кирпича и ячеистого бетона'},
+- {id: '8', title: 'Цементно-известковая штукатурка «Финишная» АртеМикс 25кг', descr: 'Предназначена для выравнивания стен из бетона, кирпича и ячеистого бетона. Рекомендуется для отделки фасадов, цоколей,'},
+- {id: '9', title: 'Цементно-песчаная смесь М150 АртеМикс (25кг)', descr: 'Смесь предназначена для изготовления штукатурок, кладочных растворов, лёгких стяжек, укладки бетонных блоков.'},
+- {id: '10', title: 'Цементно-песчаная смесь М300 АртеМикс 25 кг', descr: 'Смесь предназначена для изготовления стяжек, фундаментов, ремонта бетонных оснований, укладки бетонных блоков'},
+- {id: '11', title: 'Клеевая смесь СУФ универсальная АртеМикс (25кг)', descr: 'Клеевая смесь для системы утепления фасадов'},
+- ]
+
+//- Общие материалы
+- const generalMaterials = [
+- {id: '12', title: 'Огнеупорная смесь (25кг)', descr: 'Огнеупорный раствор'},
+- {id: '13', title: 'Печная смесь(25кг)', descr: 'Смесь для кладки огнеупорным кирпичом'},
+- {id: '14', title: 'Кирпич глинянный строительный полнотелый М150', descr: ''},
+- {id: '15', title: 'Кирпич глинянный строительный пустотелый М150', descr: ''},
+- {id: '16', title: 'ГИПС ВЫСОКОПРОЧНЫЙ Г-16', descr: 'Гипс ГВВС-16 - быстротвердеющее вяжущее вещество отличающееся высокой прочностью и пластичностью. Применяется для производства'},
+- {id: '17', title: 'Гипс строительный Г5', descr: 'Гипс строительный предназначен для заделки щелей, трещин, раковин, выбоин на бетонных, кирпичных и оштукатуренных поверхностях, а'},
+- ]
+
+//- Мелкая фасовка
+- const smallPacking = [
+- {id: '18', title: 'Гипс строительный Артемикс 2,5кг', descr: 'Гипс марки Г-5 в прочном полиэтиленовом пакете с удобной ручкой'},
+- {id: '19', title: 'Гипс строительный Артемикс 5кг', descr: 'Гипс марки Г-5 в прочном полиэтиленовом пакете с удобной ручкой'},
+- {id: '20', title: 'Известь садовая Артемикс 2,5кг', descr: 'Гашеная известь для садоводов и дачников в удобном маленьком полиэтиленовом пакете'},
+- {id: '21', title: 'Песок сухой кварцевый Артемикс 5 кг', descr: 'Сухой песок кварцевый фракция от 0.1 до 2 мм в прочном маленьком пакете'},
+- {id: '22', title: 'Цемент Артемикс М500 5 кг', descr: 'Чистый цемент упакованный в прочный полиэтиленовый мешок с удобной ручкой.'},
+- {id: '23', title: 'Клей Усиленный для кафельной плитки Артемикс 5кг', descr: 'Отличное решение для крепления 1-2 плиток кафеля'},
+- {id: '24', title: 'Ремсостав ЦПС 300 Артемикс 5кг', descr: 'Цементно-песчаная смесь М300 упакованная в маленький прочный пакет.'},
+- {id: '25', title: 'Цемент М500 2.5 кг', descr: 'Чистый цемент упакованный в прочный полиэтиленовый мешок с удобной ручкой'},
+- {id: '26', title: 'Ремсостав ЦПС 300 Артемикс 2.5кг', descr: 'Цементно-песчаная смесь М300 упакованная в маленький прочный пакет.'},
+- {id: '27', title: 'Клей Усиленный для кафельной плитки Артемикс 2.5кг', descr: 'Отличное решение для крепления 1-2 плиток кафеля'},
+- {id: '28', title: 'Песок сухой кварцевый Артемикс 2.5 кг', descr: 'Сухой песок кварцевый фракция от 0.1 до 2 мм в прочном маленьком пакете'},
+- ]
+
+//- Минеральные удобрения
+- const mineralFertilizers = [
+- {id: '29', title: 'Доломитовая мука(20кг)', descr: 'Натуральное, экологически чистое удобрение.'},
+- {id: '30', title: 'Известь гашённая(25кг)', descr: 'Гашеная известь (другое название – известь «пушонка», гидратная известь)'},
+- ]
+
+//- Нерудные материалы
+- const nonMetallicMaterials = [
+- {id: '31', title: 'Керамзит фасованный(0,04м.куб)', descr: 'Керамзитовый гравий (10-20 мм).'},
+- {id: '32', title: 'Пескосоль 30/70 (40кг)', descr: ''},
+- {id: '33', title: 'Песок строительный 50 кг', descr: ''},
+- {id: '34', title: 'Щебень фасованный 5*10 (40кг)', descr: 'Щебень тарированный в мешках. Градация фасовки 25-50 кг'},
+- {id: '35', title: 'Щебень фасованный 5*20 (50кг)', descr: 'Щебень тарированный в мешках. Градация фасовки 25-50 кг'},
+- {id: '36', title: 'Щебень фасованный 20*40 (50кг)', descr: 'Щебень тарированный в мешках. Градация фасовки 25-50 кг'},
+- {id: '37', title: 'Керамзит фасованный(Биг-Бэг)', descr: 'Керамзит фасованный в Биг-Бэг. Градация фасовки 2 куб.м Цена указана за 1 куб.'},
+- ]
+
+//- Цемент
+- const cement = [
+- {id: '38', title: 'Цемент М 400 Д20 (45кг)', descr: ''},
+- {id: '39', title: 'Цемент М 400 Д20 (50кг)', descr: ''},
+- {id: '40', title: 'Цемент М 500 Д 0 (40кг)', descr: 'Градация фасовки 40-50 кг Цена указана за 40 кг'},
+- {id: '41', title: 'Цемент ЕВРОЦЕМЕНТ 400Д20(50 КГ)', descr: ''},
+- {id: '42', title: 'Цемент Евроцемент М 500', descr: ''},
+- ]
+
+//- Товары навалом
+- const goodsInBulk = [
+- {id: '43', title: 'Гипс строительный Г5(Биг-бэг) вагон', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '44', title: 'Гипс строительный Г5 (биг-бэг) самовывоз', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '45', title: 'Гипс строительный Г5 (биг-бэг) доставка от 20-22 тонн', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '46', title: 'Гипс тарирован в биг-бэг', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '47', title: 'Гипс строительный Г5 (навал)', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '48', title: 'Цемент навальный М 400 (ЦЕМ ll/A-Ш 32.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
+- {id: '49', title: 'Цемент навальный М500(ЦЕМ ll/A-Ш 42.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
 - ]
 
 
 
-section.catalog-screen
+
+section.catalog-screen#catalog
    .ui-container.lg
       .title-wrap 
-         button.ui-btn.btn_dark Заказать звонок
+         button.ui-btn.btn_dark.open_call Заказать звонок
          h2.ui-title.section-title строительные смеси для любых работ
 
       .catalog-wrap
@@ -33,26 +103,107 @@ section.catalog-screen
                   h6.tab__title: span.ui-title= item.title
                   span.tab__product-count= item.productCountText
          
+         //- Сухие смеси
          .catalog-container.swiper-container
             .swiper#catalog-swiper-1
                .swiper-wrapper
                   each item in dryMixes
                      .swiper-slide.product
                         .product-container 
-                           .product-img: img(src=`assets/img/catalog/product_1.webp`, alt="item.title")
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-1
+            .swiper-arrow.next.next-1
          
+         //- Общие материалы
          .catalog-container.swiper-container
             .swiper#catalog-swiper-2
                .swiper-wrapper
-                  each item in dryMixes
+                  each item in generalMaterials
                      .swiper-slide.product
                         .product-container 
-                           .product-img: img(src=`assets/img/catalog/product_1.webp`, alt="item.title")
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
                               .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-2
+            .swiper-arrow.next.next-2
+
+         //- Мелкая фасовка
+         .catalog-container.swiper-container
+            .swiper#catalog-swiper-3
+               .swiper-wrapper
+                  each item in smallPacking
+                     .swiper-slide.product
+                        .product-container 
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
+                           .product-info
+                              h4.ui-title.product-title= item.title
+                              p.product-descr= item.descr
+                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-3
+            .swiper-arrow.next.next-3
+
+         //- Минеральные удобрения
+         .catalog-container.swiper-container
+            .swiper#catalog-swiper-4
+               .swiper-wrapper
+                  each item in mineralFertilizers
+                     .swiper-slide.product
+                        .product-container 
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
+                           .product-info
+                              h4.ui-title.product-title= item.title
+                              p.product-descr= item.descr
+                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-4
+            .swiper-arrow.next.next-4
+
+         //- Нерудные материалы
+         .catalog-container.swiper-container
+            .swiper#catalog-swiper-5
+               .swiper-wrapper
+                  each item in nonMetallicMaterials
+                     .swiper-slide.product
+                        .product-container 
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
+                           .product-info
+                              h4.ui-title.product-title= item.title
+                              p.product-descr= item.descr
+                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-5
+            .swiper-arrow.next.next-5
+
+         //- Цемент
+         .catalog-container.swiper-container
+            .swiper#catalog-swiper-6
+               .swiper-wrapper
+                  each item in cement
+                     .swiper-slide.product
+                        .product-container 
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
+                           .product-info
+                              h4.ui-title.product-title= item.title
+                              p.product-descr= item.descr
+                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-6
+            .swiper-arrow.next.next-6
+
+         //- Товары навалом
+         .catalog-container.swiper-container
+            .swiper#catalog-swiper-7
+               .swiper-wrapper
+                  each item in goodsInBulk
+                     .swiper-slide.product
+                        .product-container 
+                           .product-img: img(src=`assets/img/catalog/product_card_1.webp`, alt="item.title")
+                           .product-info
+                              h4.ui-title.product-title= item.title
+                              p.product-descr= item.descr
+                              .vi-fill-icon.product_icon(data-id=item.id): i.i-plus
+            .swiper-arrow.prev.prev-7
+            .swiper-arrow.next.next-7

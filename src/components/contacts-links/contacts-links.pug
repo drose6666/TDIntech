@@ -1,0 +1,16 @@
+- const contactLinks  = [
+- {text: 'example.intech@gmail.com', icon: 'email', link: 'mailto:example.intech@gmail.com'},
+- {text: '+7 968 526 000 7', icon: 'phone', link: 'tel:+79685260007'},
+- ]
+
+- const contactAddress = {text: 'Санкт-Петербург, <br> просп. Московский, 71', icon: 'marker'} 
+
+.contact-links(class={contactsScreenLinks: contactsScreenLinks})
+   each item in contactLinks
+      a.contact-item.hover_parent(href=item.link)
+         .vi-border-icon.action: i(class=`i-${item.icon}`)
+         span= item.text
+
+   .contact-item.hover_parent.address
+      .vi-border-icon.action: i(class=`i-${contactAddress.icon}`)
+      span!= contactAddress.text

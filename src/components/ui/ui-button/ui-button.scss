@@ -10,10 +10,27 @@
    font-weight: 700;
    text-transform: uppercase;
    white-space: nowrap;
-   transition: all .2s ease;
+   transition: 
+      transform .2s ease,
+      color .2s ease,
+      background-color .2s ease,
+      opacity .5s ease,
+      visibility .5s ease,
+      translate .5s ease;
+
+   i {
+      font-size: 17px;
+      color: var(--light);
+      transition: inherit;
+   }
 
    &:hover {
       transform: translateY(-3px);
+
+      i {
+         color: var(--action);
+         transform: translateX(7px);
+      }
    }
 
    &.btn_action {
@@ -36,7 +53,7 @@
 
    &.btn_outline {
       background: transparent;
-      border: 1px solid var(--light);
+      border: 1px solid var(--text_on_dark);
       color: var(--light);
 
       &:hover {
@@ -48,5 +65,10 @@
    @media all and (max-width: 400px) {
       padding: 10px 30px;
       min-height: 55px;
+      gap: 20px;
+
+      i {
+         font-size: 14px;
+      }
    }
 }

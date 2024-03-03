@@ -1,3 +1,10 @@
+- let socialsWords = true
+
+- const socialsItem = [
+- {icon: 'telegram', link: '/', text: 'Telegram'},
+- {icon: 'whatsapp', link: '/', text: 'Whatsapp'}
+- ]
+
 doctype html
 html(lang="en")
    include ../components/head/head
@@ -6,15 +13,22 @@ html(lang="en")
       include ../components/ui/ui-preloader/ui-preloader
       include ../components/header/header
       include ../components/menu/mobile-menu/mobile-menu
+         
 
       main 
          block main
       
       include ../components/screen/contact-screen/contact-screen
       include ../components/footer/footer
+      include ../components/popups/popup-product/popup-product
+      include ../components/popups/popup-call/popup-call
+      include ../components/popups/popup-review/popup-review
+      include ../components/ui/ui-scrollUp/ui-scrollUp
+      .ui-overlay
 
       block additional
+
       
-         
+          
 
       

@@ -36,10 +36,10 @@ textarea.ui-field {
 
    .error-message {
       position: relative;
-      top: 2px;
+      top: 5px;
       color: var(--error);
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 100%;
       display: none;
    }
@@ -50,7 +50,7 @@ textarea.ui-field {
          color: var(--error);
 
          &::placeholder {
-            color: var(--error_bg);
+            color: var(--error);
          }
       }
 
@@ -100,6 +100,32 @@ textarea.ui-field {
 
       &.c_2 {
          grid-template: auto / 1fr 1fr;
+      }
+   }
+
+   .message-status {
+      margin-top: 30px;
+      padding: 12px 20px;
+      display: none;
+      font-family: var(--title_font);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 110%;
+      text-transform: uppercase;
+      border-radius: 5px;
+
+      &.success {
+         background: var(--success_bg);
+         border-left: 4px solid var(--success);
+         display: block;
+         color:  var(--success);
+      }
+
+      &.error {
+         background: var(--error_bg);
+         border-left: 4px solid var(--error);
+         display: block;
+         color: var(--error);
       }
    }
 

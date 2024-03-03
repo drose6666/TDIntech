@@ -1,0 +1,36 @@
+.ui-close {
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: 15px;
+   right: 15px;
+   background: transparent;
+   border-radius: var(--circleR);
+   position: absolute;
+   cursor: pointer;
+   transition: all .2s ease;
+
+   &:before {
+      content: '\e905';
+      font-family: var(--icon_font);
+      font-size: 15px;
+      color: var(--text_on_dark);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: inherit;
+   }
+
+   &:hover {
+      &:before {
+         color: var(--action);
+      }
+   }
+
+   &.mobile_menu {
+      position: absolute;
+      right: 20px;
+      top: 50px;
+   }
+}

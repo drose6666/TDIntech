@@ -79,6 +79,38 @@
          @extend %viFillIconHover;
       }
    }
+
+   &.ui-scrollUp {
+      $size: 45px;
+
+      width: $size;
+      height: $size;
+      flex: 0 0 $size;
+
+      &:after {
+         background: var(--light);
+      }
+
+      i {
+         font-size: 16px;
+         color: var(--dark);
+      }
+
+      &:hover {
+         border-color: var(--dark);
+         box-shadow: none;
+
+         &:after {
+            background: var(--dark);
+         }
+
+         i {
+            color: var(--action)
+         }
+            
+         @extend %viFillIconHover;
+      }
+   }
 }
 
 

@@ -26,8 +26,8 @@ function setOptions (id) {
          onlyInViewport: false,
       },
       navigation: {
-         nextEl: `.vi-fill-icon.next-${id}`,
-         prevEl: `.vi-fill-icon.prev-${id}`
+         nextEl: `.swiper-arrow.next-${id}`,
+         prevEl: `.swiper-arrow.prev-${id}`
       },
       breakpoints: {
          120: {

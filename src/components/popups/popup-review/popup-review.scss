@@ -1,0 +1,17 @@
+.popup-review {
+   .review__title {
+      color: var(--light);
+   }
+
+   .review__text {
+      font-size: 13px;
+      line-height: 175%;
+      color: var(--text_on_dark);
+   }
+
+   .author {
+      &__name {
+         color: var(--light);
+      }
+   }
+}

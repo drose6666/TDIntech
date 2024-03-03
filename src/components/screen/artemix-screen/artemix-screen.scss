@@ -1,5 +1,5 @@
 .artemix-screen {
-   padding: var(--sectionG) 0;
+   padding: var(--sectionG) 0 150px 0;
    container-name: artemixScreen;
    container-type: inline-size;
 
@@ -83,7 +83,8 @@
       display: inline-flex;
       align-items: center;
       justify-content: space-between;
-      gap: clamp(40px, 7cqi, 60px);
+      column-gap: clamp(40px, 7cqi, 60px);
+      row-gap: 25px;
       border-radius: var(--basicR);
       background: var(--light);
       box-shadow: var(--selected_white_block);

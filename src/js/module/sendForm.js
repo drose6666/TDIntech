@@ -1,7 +1,5 @@
-
-
 export default async function sendForm(form) {
-   const statusMessage = document.querySelector('.form-wrap .message-status');
+   const statusMessage = form.querySelector('.message-status');
 
    try {
       const isValid = validateForm(form);
@@ -15,7 +13,7 @@ export default async function sendForm(form) {
          });
 
          if (response.ok) {
-            for (let item of document.querySelectorAll('#form .field')) {
+            for (let item of document.querySelectorAll('.form .ui-field')) {
 					item.value = ''
 				}
             statusMessage.classList.add('success')

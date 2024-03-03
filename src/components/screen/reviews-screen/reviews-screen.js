@@ -14,8 +14,8 @@ new Swiper('#reviews-swiper', {
       onlyInViewport: false,
    },
    navigation: {
-      nextEl: '.swiper-arrow.next',
-      prevEl: '.swiper-arrow.prev'
+      nextEl: '.reviews-container .swiper-arrow.next',
+      prevEl: '.reviews-container .swiper-arrow.prev'
    },
    breakpoints: {
       120: {

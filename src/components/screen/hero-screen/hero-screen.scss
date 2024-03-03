@@ -32,10 +32,24 @@
          line-height: 110%;
          color: var(--light);
          text-transform: uppercase;
+         transition: all .8s ease;
 
          strong {
             font-weight: 600;
             color: var(--action);
+         }
+
+         &.animate {
+            opacity: 0;
+            visibility: hidden;
+            translate: 30px;
+
+            &.animation {
+               opacity: 1;
+               visibility: visible;
+               translate: none;
+               transition-delay: .8s;
+            }
          }
       }
 
@@ -44,6 +58,23 @@
          align-items: center;
          gap: clamp(15px, 3cqi, 30px);
          position: relative;
+
+         &.animate {
+            opacity: 0;
+            visibility: hidden;
+            translate: 30px;
+            transition: all .7s ease;
+
+            &.animation {
+               opacity: 1;
+               visibility: visible;
+               translate: none;
+
+               &.top { transition-delay: .6s; }
+
+               &.bottom { transition-delay: 1s; }
+            }
+         }
 
          strong {
             font-size: clamp(18px, 4cqi, 22px);
@@ -55,7 +86,7 @@
          &:before {
             content: '';
             display: block;
-            width: clamp(1px, 20cqi, 160px);
+            width: clamp(1px, 30cqi, 160px);
             height: 1px;
             background: var(--light);
          }
@@ -67,8 +98,40 @@
          display: flex;
          flex-wrap: wrap;
          column-gap: 20px;
-         row-gap: 10px;
+         row-gap: 15px;
       }
+
+      .ui-btn {
+         &.animate {
+            opacity: 0;
+            visibility: hidden;
+            translate: 30px;
+
+            $j: 1.1s;
+            @for $i from 1 through 2 {
+               $j: $j + 0.1s;
+               
+               &:nth-child(#{$i}) {
+                  &.animation {
+                     opacity: 1;
+                     visibility: visible;
+                     translate: none;
+                     transition: 
+                        transform .2s ease,
+                        color .2s ease,
+                        background-color .2s ease,
+                        opacity .5s ease $j,
+                        visibility .5s ease $j,
+                        translate .5s ease $j;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .socials-wrap {
+      width: 100%;
    }
 
    @media all and (max-height: 820px) {
@@ -96,7 +159,14 @@
          }
 
          .btn-group {
-            .ui-btn {
+            justify-content: center;
+
+            .ui-btn:nth-child(1) {
+               width: 100%;
+            }
+
+            .ui-btn:nth-child(2) {
+               max-width: 220px;
                width: 100%;
             }
          }

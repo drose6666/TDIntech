@@ -5,25 +5,20 @@ block main
       .hero-content
          .hero-content__container.ui-container
             .hero-content__titles
-               span.decor-el #[strong Единственный]
-               h1.hero-content__title официальный #[br] дилер продукции #[strong Артемикс]
-               span.decor-el #[strong В Калининграде]
+               span.decor-el.top.animate #[strong Единственный]
+               h1.hero-content__title.animate официальный #[br] дилер продукции #[strong Артемикс]
+               span.decor-el.bottom.animate #[strong В Калининграде]
             
             .btn-group 
-               button.ui-btn.btn_action Сделать заказ
-               a.ui-btn.btn_outline(href="#about") О нас
+               a.ui-btn.btn_action.animate(href="#catalog") Сделать заказ
+               a.ui-btn.btn_outline.animate(href="#about") О нас
          
-         .socials.words.ui-container.lg 
-            a.socials__link(href="/" target="_blank") Telegram
-            a.socials__link(href="/" target="_blank") Whatsapp
+         .ui-container.lg.socials-wrap 
+            include components/socials/socials-words
+               block socials 
 
    include components/screen/about-screen/about-screen
    include components/screen/artemix-screen/artemix-screen
    include components/screen/action-screen/action-screen
    include components/screen/catalog-screen/catalog-screen
    include components/screen/reviews-screen/reviews-screen
-
-
-
-
-

@@ -3,12 +3,13 @@
 footer 
    .ui-container 
       .footer-menu-wrap
-         a.logo: img(src="assets/img/logo/logo_light.svg", alt="ТД ИНТЕХ")
+         a.logo: img(src="assets/img/logo/logo_color.svg", alt="ТД ИНТЕХ")
 
          include ../menu/nav-menu/nav-menu
             block navMenu
 
-         include ../socials/socials
+         include ../socials/socials-icons
+            block socials 
       
       p.copyright ТД Интех © | Все права защищены
 

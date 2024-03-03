@@ -7,13 +7,18 @@
 @import '../../components/footer/footer';
 @import '../../components/socials/socials';
 @import '../../components/menu/nav-menu/nav-menu';
-@import '../../components/phone/phone';
+@import '../../components/menu/mobile-menu/mobile-menu';
+@import '../../components/contacts-links/contacts-links';
+@import '../../components/popups/popup';
 
 // UI
+@import '../../components/ui/ui-preloader/ui-preloader';
 @import '../../components/ui/ui-button/ui-button';
 @import '../../components/ui/ui-burger/ui-burger';
 @import '../../components/ui/ui-field/ui-field';
 @import '../../components/ui/typography/typography';
+@import '../../components/ui/ui-close/ui-close';
+@import '../../components/ui/ui-scrollUp/ui-scrollUp';
 
 // VI
 @import '../../components/vi/vi-border-icon';
@@ -41,7 +46,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-   background: var(--action);
+   background: var(--text_on_dark);
    border-radius: 50px;
 }
 
@@ -65,7 +70,7 @@ body {
    font-family: var(--text_font);
 
    &.no-scroll {
-      overflow: hidden;
+      overflow-y: hidden;
    }
 }
    
@@ -90,5 +95,24 @@ i {
 
    &.lg {
       max-width: 1770px;
+   }
+}
+
+// TODO overlay
+.ui-overlay {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: var(--overlay);
+   opacity: 0;
+   visibility: hidden;
+   z-index: 1;
+   transition: all .3s ease;
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
    }
 }

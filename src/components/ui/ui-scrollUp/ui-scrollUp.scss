@@ -1,0 +1,24 @@
+.ui-scrollUp {
+   
+   right: 30px;
+   bottom: 85px;
+   opacity: 0;
+   visibility: hidden;
+   transform: translateY(-20px);
+
+   &.sticky {
+      position: fixed;
+      z-index: 1;
+
+      i {
+         margin-bottom: 2px;
+         transform: rotate(90deg);
+      }
+   }
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+   }
+}

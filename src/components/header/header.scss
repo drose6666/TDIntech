@@ -1,12 +1,10 @@
-
-
 header {
    padding: 20px 0;
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
-   z-index: 1;
+   z-index: 2;
    transition: all .3s ease;
 
    .ui-container {
@@ -22,12 +20,96 @@ header {
    }
 
    .logo {
-      max-width: 160px;
+      max-width: 170px;
       transition: all .3s ease;
 
       img {
          max-width: 100%;
          height: auto;
+      }
+   }
+
+   &.active {
+      padding: 15px 0;
+      background: var(--dark);
+
+      .logo {
+         max-width: 160px;
+      }
+
+      .phone-wrap {
+         .btn_call {
+            transform: translateX(-10px);
+            opacity: 0;
+            visibility: hidden;
+         }
+      }
+   }
+
+}
+
+.phone-wrap {
+   position: relative;
+   transition: all .2s ease;
+
+   .header-phone {
+      display: flex;
+      align-items: center;
+      gap: clamp(10px, 2cqi, 15px);
+      transition: all .2s ease;
+
+      span {
+         font-size: clamp(16px, 2cqi, 22px);
+         font-weight: 700;
+         color: var(--light);
+         transition: inherit;
+         position: relative;
+
+         &:after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 1px;
+            width: 0;
+            background: var(--light);
+            transition: inherit;
+         }
+      }
+
+      i {
+         font-size: clamp(18px, 2cqi, 28px);
+         color: var(--light);
+         transition: inherit;
+      }
+
+      &:hover {
+         span {
+            color: var(--action);
+
+            &:after {
+               width: 100%;
+            }
+         }
+
+         i {
+            transform: translateX(-3px);
+         }
+      }
+   }
+
+   .btn_call {
+      font-size: clamp(12px, 1.5cqi, 16px);
+      font-weight: 400;
+      color: var(--light);
+      position: absolute;
+      right: 0;
+      top: calc(100% + 5px);
+      cursor: pointer;
+      transition: inherit;
+
+      &:hover {
+         color: var(--action);
       }
    }
 }
@@ -38,14 +120,14 @@ header {
       display: none;
    }
 
-   header .logo {
-      max-width: 110px;
+   header .logo, header.active .logo {
+      max-width: 130px;
    }
 }
 
-@media all and (max-width: 410px) {
+@media all and (max-width: 420px) {
    header {
-      a.phone {
+      .phone-wrap {
          display: none;
       }
 
@@ -62,7 +144,5 @@ header {
          order: 2;
       }
    }
-
-
 }
 

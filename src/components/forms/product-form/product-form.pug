@@ -1,0 +1,21 @@
+form.form#product-form(method="POST", action="assets/libs/telegram.php")
+   input(type="hidden", name="subject", value="")
+
+   .grid-item.c_2 
+      .form-item
+         input.ui-field(type="text", name="user_name", inputmode="text", autocomplete="given-name", placeholder="Имя", data-required, data-type="name")
+         span.error-message
+
+      .form-item  
+         input.ui-field(type="tel", name="user_tel", inputmode="tel", autocomplete="tel", placeholder="Телефон", data-required, data-type="tel")
+         span.error-message
+
+   .form-item
+      textarea.ui-field(name="user_message", placeholder="Сообщение", data-type="message")
+      span.error-message
+
+   .form-submit
+      button.ui-btn.btn_action(type="submit") Заказать
+      p.text Нажимая на кнопку "Отправить" вы соглашаетесь с #[strong политикой конфиденциальности] 
+
+   p.message-status

@@ -1,5 +1,5 @@
 .contact-screen {
-   padding-bottom: var(--sectionG);
+   padding-bottom: 100px;
    background: var(--dark);
 
    .ui-container {
@@ -42,61 +42,7 @@
       gap: clamp(30px, 4cqi, 50px);
    }
 
-   .contact-list {
-      .contact-item, .contact-item a {
-         display: flex;
-         align-items: center;
-         gap: 15px;
-      }
-
-      .contact-item {
-         span {
-            font-family: var(--title_font);
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 120%;
-            color: var(--light);
-            text-transform: uppercase;
-            transition: inherit;
-         }
-      }
-
-      .contact-item a {
-         transition: all .2s ease;
-
-         span {
-            position: relative;
-            white-space: nowrap;
-
-            &:before {
-               content: '';
-               position: absolute;
-               bottom: -3px;
-               left: 0;
-               width: 0;
-               height: 1px;
-               background: var(--light);
-               transition: inherit;
-            }
-         }
-
-         &:hover {
-            span {
-               color: var(--action);
-
-               &:before {
-                  width: 100%;
-               }
-            }
-         }
-      }
-
-      .contact-item {
-         &:not(:last-child) {
-            margin-bottom: 15px;
-         }
-      }
-   }
+   
 
 
    @media all and (max-width: 1100px) {
@@ -110,52 +56,6 @@
       .contact-container {
          grid-template: auto / 1fr;
          gap: 60px;
-      }
-
-      .contact-list {
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         column-gap: 30px;
-         row-gap: 15px;
-
-         .contact-item {
-            span {
-               font-size: 17px;
-            }
-
-            &:not(:last-child) {
-               margin-bottom: 0;
-            }
-         }
-      }
-   }
-
-   @media all and (max-width: 840px) {
-      .contact-list {
-         justify-content: flex-start;
-         flex-wrap: wrap;
-      }
-   }
-
-   @media all and (max-width: 640px) {
-      .contact-list {
-         flex-direction: column;
-         align-items: flex-start;
-
-         .contact-item {
-            span {
-               font-size: clamp(15px, 5cqi, 20px);
-            }
-         }
-      }
-   }
-
-   @media all and (max-width: 340px) {
-      .contact-list {
-         .contact-item, .contact-item a {
-            gap: 10px;
-         }
       }
    }
 }

@@ -1,0 +1,46 @@
+.popup-wrap#popup-product
+   .popup
+      .ui-close
+
+      .product-info
+         .product-info__item.flex-wrap
+            .product-img
+               picture
+                  source(media="(max-width: 535px)", srcset="assets/img/catalog/product_1.webp")
+                  source(media="(max-width: 700px)", srcset="assets/img/catalog/product_1_700w.webp")
+                  source(media="(max-width: 1060px)", srcset="assets/img/catalog/product_1_1060w.webp")
+                  img(src="assets/img/catalog/product_1.webp", alt="")
+            
+            .descr-wrap 
+               h3.product-title
+               .text-wrap
+                  p.product-text
+                  p.product-text
+
+         .product-info__item
+            h5.product-info__title Подготовка основания
+            .text-wrap
+               p.product-text
+               p.product-text
+
+         .product-info__item
+            h5.product-info__title Приготовление растворной смеси
+            .text-wrap
+               p.product-text
+
+         .product-info__item
+            h5.product-info__title Технические характеристики
+            ul.sepcifications
+               li.sepcifications__item
+                  .key.item_text
+                  .value.item_text 
+               li.sepcifications__item
+                  .key.item_text
+                  .value.item_text
+      
+      .product-action 
+         .product-title Закажите #[strong прямо сейчас!]
+         .product-action__subtitle.ui-text Вы можете сделать заказ, заполнив форму ниже. Мы свяжемся с вами для уточнения деталей в ближайшее время
+         include ../../forms/product-form/product-form
+
+   .popup-overlay
