@@ -20,7 +20,7 @@ section.reviews-screen#reviews
                         .review__text-wrap
                            p.review__text.ui-text= item.review
                            if item.review.length > 330
-                              .read-more.open_review(data-id=item.id) #[span Читать польностью] #[i.i-angle_right]
+                              .read-more.open_review(data-id=item.id) #[span Читать полностью] #[i.i-angle_right]
 
                         .author
                            .author__img: img(src=`assets/img/reviews/avatar_${item.id}.webp`, alt=item.author.name) 

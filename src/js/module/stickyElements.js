@@ -1,10 +1,10 @@
 // TODO Sticky elements
 window.addEventListener('load', () => {
-   fadeInNavOnScroll('.sticky', 150)
+   fadeInNavOnScroll('.sticky', 5)
 })
 
 window.addEventListener('scroll', () => {
-   fadeInNavOnScroll('.sticky', 150)
+   fadeInNavOnScroll('.sticky', 5)
 })
 
 

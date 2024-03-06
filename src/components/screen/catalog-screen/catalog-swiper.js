@@ -1,7 +1,7 @@
 import Swiper from 'swiper/bundle';
 
 let swipers = document.querySelectorAll('[id^="catalog-swiper"]')
-window.addEventListener('load', setSwipers)
+window.addEventListener('DOMContentLoaded', setSwipers)
 
 function setSwipers () {
    swipers.forEach((item, index) => {
