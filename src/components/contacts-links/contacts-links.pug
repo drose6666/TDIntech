@@ -1,9 +1,10 @@
 - const contactLinks  = [
 - {text: 'example.intech@gmail.com', icon: 'email', link: 'mailto:example.intech@gmail.com'},
-- {text: '+7 968 526 000 7', icon: 'phone', link: 'tel:+79685260007'},
+- {text: '+7 911 459 24 73', icon: 'phone', link: 'tel:+79114592473'},
 - ]
 
-- const contactAddress = {text: 'Санкт-Петербург, <br> просп. Московский, 71', icon: 'marker'} 
+- const contactAddress = {text: 'Калининград, <br> просп. Советский, 12, офис 805', icon: 'marker'} 
+- const contactWarehouse = {text: 'Калининград, <br> просп. Прегольский, 1Б', icon: 'warehouse'} 
 
 .contact-links(class={contactsScreenLinks: contactsScreenLinks})
    each item in contactLinks
@@ -11,6 +12,10 @@
          .vi-border-icon.action: i(class=`i-${item.icon}`)
          span= item.text
 
-   .contact-item.hover_parent.address
+   .contact-item.hover_parent
       .vi-border-icon.action: i(class=`i-${contactAddress.icon}`)
       span!= contactAddress.text
+
+   .contact-item.hover_parent
+      .vi-border-icon.action: i(class=`i-${contactWarehouse.icon}`)
+      span!= contactWarehouse.text

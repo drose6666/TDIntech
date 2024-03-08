@@ -1,10 +1,10 @@
 // TODO Sticky elements
 window.addEventListener('load', () => {
-   fadeInNavOnScroll('.sticky', 5)
+   fadeInNavOnScroll('.sticky', 30)
 })
 
 window.addEventListener('scroll', () => {
-   fadeInNavOnScroll('.sticky', 5)
+   fadeInNavOnScroll('.sticky', 30)
 })
 
 
@@ -15,7 +15,7 @@ function fadeInNavOnScroll(elements, distance) {
       if (window.scrollY >= distance) 
          items[i].classList.add('active')
       
-      if (window.scrollY <= 150)
+      if (window.scrollY <= distance)
          items[i].classList.remove('active')
    }
 }

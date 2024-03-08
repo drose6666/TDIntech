@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'TDIntech';
-  src:  url('fonts/TDIntech.eot?9ykzdq');
-  src:  url('fonts/TDIntech.eot?9ykzdq#iefix') format('embedded-opentype'),
-    url('fonts/TDIntech.ttf?9ykzdq') format('truetype'),
-    url('fonts/TDIntech.woff?9ykzdq') format('woff'),
-    url('fonts/TDIntech.svg?9ykzdq#TDIntech') format('svg');
+  src:  url('fonts/TDIntech.eot?opu1s7');
+  src:  url('fonts/TDIntech.eot?opu1s7#iefix') format('embedded-opentype'),
+    url('fonts/TDIntech.ttf?opu1s7') format('truetype'),
+    url('fonts/TDIntech.woff?opu1s7') format('woff'),
+    url('fonts/TDIntech.svg?opu1s7#TDIntech') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-warehouse:before {
+  content: "\e910";
+}
 .i-angle_left:before {
   content: "\e900";
 }

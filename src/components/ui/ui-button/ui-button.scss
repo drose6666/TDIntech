@@ -33,6 +33,23 @@
       }
    }
 
+   &.btn_product {
+      padding: 14px 22px;
+      font-size: 13px;
+      color: var(--light);
+      background: var(--dark);
+      box-shadow: var(--btn_dark);
+      position: absolute;
+      right: 15px;
+      top: -35px;
+      min-height: auto;
+
+      &:hover {
+         color: var(--action);
+         background: var(--border_dark);
+      }
+   }
+
    &.btn_action {
       background: var(--action);
       color: var(--dark);
@@ -43,8 +60,9 @@
    }
 
    &.btn_dark {
-      background: var(--dark);
       color: var(--light);
+      background: var(--dark);
+      box-shadow: var(--btn_dark);
 
       &:hover {
          background: var(--border_dark);

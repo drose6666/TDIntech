@@ -52,13 +52,13 @@
 
 //- Минеральные удобрения
 - const mineralFertilizers = [
-- {id: '29', title: 'Доломитовая мука(20кг)', descr: 'Натуральное, экологически чистое удобрение.'},
-- {id: '30', title: 'Известь гашённая(25кг)', descr: 'Гашеная известь (другое название – известь «пушонка», гидратная известь)'},
+- {id: '29', title: 'Доломитовая мука (20кг)', descr: 'Натуральное, экологически чистое удобрение.'},
+- {id: '30', title: 'Известь гашённая (25кг)', descr: 'Гашеная известь (другое название – известь «пушонка», гидратная известь)'},
 - ]
 
 //- Нерудные материалы
 - const nonMetallicMaterials = [
-- {id: '31', title: 'Керамзит фасованный(0,04м.куб)', descr: 'Керамзитовый гравий (10-20 мм).'},
+- {id: '31', title: 'Керамзит фасованный (0,04м.куб)', descr: 'Керамзитовый гравий (10-20 мм).'},
 - {id: '32', title: 'Пескосоль 30/70 (40кг)', descr: ''},
 - {id: '33', title: 'Песок строительный 50 кг', descr: ''},
 - {id: '34', title: 'Щебень фасованный 5*10 (40кг)', descr: 'Щебень тарированный в мешках. Градация фасовки 25-50 кг'},
@@ -71,20 +71,20 @@
 - const cement = [
 - {id: '38', title: 'Цемент М 400 Д20 (45кг)', descr: ''},
 - {id: '39', title: 'Цемент М 400 Д20 (50кг)', descr: ''},
-- {id: '40', title: 'Цемент М 500 Д 0 (40кг)', descr: 'Градация фасовки 40-50 кг Цена указана за 40 кг'},
-- {id: '41', title: 'Цемент ЕВРОЦЕМЕНТ 400Д20(50 КГ)', descr: ''},
-- {id: '42', title: 'Цемент Евроцемент М 500', descr: ''},
+- {id: '40', title: 'Цемент М 500 Д0 (40кг)', descr: 'Градация фасовки 40-50 кг Цена указана за 40 кг'},
+- {id: '41', title: 'Цемент ЕВРОЦЕМЕНТ 400 Д20 (50 КГ)', descr: ''},
+- {id: '42', title: 'Цемент Евроцемент М500', descr: ''},
 - ]
 
 //- Товары навалом
 - const goodsInBulk = [
-- {id: '43', title: 'Гипс строительный Г5(Биг-бэг) вагон', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '43', title: 'Гипс строительный Г5 (Биг-бэг) вагон', descr: 'Гипс тарирован в биг-бэг'},
 - {id: '44', title: 'Гипс строительный Г5 (биг-бэг) самовывоз', descr: 'Гипс тарирован в биг-бэг'},
 - {id: '45', title: 'Гипс строительный Г5 (биг-бэг) доставка от 20-22 тонн', descr: 'Гипс тарирован в биг-бэг'},
-- {id: '46', title: 'Гипс тарирован в биг-бэг', descr: 'Гипс тарирован в биг-бэг'},
+- {id: '46', title: 'Гипс строительный Г5 (биг-бэг) доставка 10 тонн', descr: 'Гипс тарирован в биг-бэг'},
 - {id: '47', title: 'Гипс строительный Г5 (навал)', descr: 'Гипс тарирован в биг-бэг'},
-- {id: '48', title: 'Цемент навальный М 400 (ЦЕМ ll/A-Ш 32.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
-- {id: '49', title: 'Цемент навальный М500(ЦЕМ ll/A-Ш 42.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
+- {id: '48', title: 'Цемент навальный М400 (ЦЕМ ll/A-Ш 32.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
+- {id: '49', title: 'Цемент навальный М500 (ЦЕМ ll/A-Ш 42.5Н)', descr: 'Цемент навальный сухой поставляется на объект цементовозом. Цена договорная.'},
 - ]
 
 
@@ -114,7 +114,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-1
             .swiper-arrow.next.next-1
          
@@ -129,7 +129,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-2
             .swiper-arrow.next.next-2
 
@@ -144,7 +144,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-3
             .swiper-arrow.next.next-3
 
@@ -159,7 +159,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-4
             .swiper-arrow.next.next-4
 
@@ -174,7 +174,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнеемм
             .swiper-arrow.prev.prev-5
             .swiper-arrow.next.next-5
 
@@ -189,7 +189,7 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-6
             .swiper-arrow.next.next-6
 
@@ -204,6 +204,6 @@ section.catalog-screen#catalog
                            .product-info
                               h4.ui-title.product-title= item.title
                               p.product-descr= item.descr
-                              .vi-fill-icon.product_icon.open_product(data-id=item.id): i.i-plus
+                              button.ui-btn.btn_product(data-id=item.id) Подробнее
             .swiper-arrow.prev.prev-7
             .swiper-arrow.next.next-7

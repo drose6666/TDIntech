@@ -7,6 +7,8 @@
 
 section.artemix-screen
    .ui-container.lg
+      h2.ui-title.section-title.max-w1000 Что такое Артемикс?
+
       .artemix-info
          .artemix-age 
             strong.age 20
@@ -29,7 +31,7 @@ section.artemix-screen
 
 
       .artemix-descr
-         h2.ui-title.section-title Что такое Артемикс?
+         h2.ui-title.section-title.min-w1000 Что такое Артемикс?
          p.ui-text Артемикс - Компания по производству сухих строительных смесей и не только. Это команда профессионалов, создающая качественные материалы по современным технологиям. Вся продукция «Артемикс» выпускается только по требованиям соответствующих ГОСТов и перед поставкой проходит тщательный внутренний контроль качества. 
          p.ui-text Продукция Артемикс прошла многолетнее испытание на многих стройках Санкт-Петербурга, среди которых ЖК «Балтийская Жемчужина», ЖК «Северная Долина», ЖК «Солнечный Город», ЖК Горного института на Васильевском острове, ЖК «Кудрово» и многие другие.
 
@@ -39,4 +41,4 @@ section.artemix-screen
                while brandIndex <= 6
                   li: img(src=`assets/img/artemix/brand_${brandIndex++}.webp`, alt="")
 
-         a.ui-btn.btn_dark(href="#catalog") Сделать заказ #[i.i-arrow_long]
+         button.ui-btn.btn_dark.open_call Заказать звонок

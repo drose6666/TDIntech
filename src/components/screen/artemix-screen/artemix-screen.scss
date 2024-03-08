@@ -8,8 +8,6 @@
       grid-template: auto / 1fr 1fr;
       gap: clamp(80px, 1cqi, 120px);
    }   
-
-
    
    // Левая колонка
    .artemix-info {
@@ -142,6 +140,10 @@
    // TODO Правая колонка
    .section-title {
       margin-bottom: 40px;
+
+      &.max-w1000 {
+         display: none;
+      }
    }
 
    .ui-text {
@@ -225,14 +227,30 @@
    }
 
    @media all and (max-width: 1000px) {
-      padding-top: 0;
+      padding-top: 50px;
 
       .ui-container {
          grid-template: auto / 1fr;
-         gap: clamp(100px, 1cqi, 120px);
+         gap: 0;
+      }
+
+      .section-title {
+         margin-bottom: 60px;
+         text-align: center;
+         max-width: 100%;
+   
+         &.max-w1000 {
+            display: block;
+         }
+
+         &.min-w1000 {
+            display: none;
+         }
       }
 
       .artemix-info {
+         margin-bottom: clamp(100px, 1cqi, 120px);
+
          &__img {
             width: 100%;
             height: 360px;

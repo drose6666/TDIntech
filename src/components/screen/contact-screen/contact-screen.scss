@@ -34,11 +34,16 @@
    .subtitle  {
       max-width: 690px;
       color: var(--text_on_dark);
+
+      strong {
+         font-weight: 700;
+         color: var(--light);
+      }
    }
 
    .contact-container {
       display: grid;
-      grid-template: auto / 1fr 325px;
+      grid-template: auto / 1fr 370px;
       gap: clamp(30px, 4cqi, 50px);
    }
 

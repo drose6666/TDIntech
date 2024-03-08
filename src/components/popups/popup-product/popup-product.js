@@ -2,7 +2,7 @@ import openPopup from '../../../js/module/popup.js';
 import sendForm from '../../../js/module/sendForm.js';
 import { productData } from './product-data.js';
 
-const openProductBtns = document.querySelectorAll('.open_product')
+const openProductBtns = document.querySelectorAll('.btn_product')
 const productInfo = document.querySelector('#popup-product .product-info')
 const productHiddenField = document.querySelector('#product-form [type="hidden"]')
 
@@ -25,7 +25,7 @@ openProductBtns.forEach(btn => {
 
 new openPopup({
    popup: '#popup-product',
-   open: '.open_product',
+   open: '.btn_product',
    close: '#popup-product .ui-close',
    overlay: '#popup-product .popup-overlay',
 })

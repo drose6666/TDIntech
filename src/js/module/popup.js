@@ -47,6 +47,8 @@ export default class openPopup {
    }
 
    onClose = () => {
+      const fieldsInPopup = this.$popup.querySelectorAll('.ui-field')
+
       this.$popup?.classList.remove('active')
       document.body.classList.remove('no-scroll')
       this.openFlag = false
@@ -57,6 +59,15 @@ export default class openPopup {
 
       if (this.frame) {
          this.deleteFrame()
+      }
+
+      if (fieldsInPopup && fieldsInPopup.length > 0) {
+         for (let item of fieldsInPopup) {
+            let fieldParent = item.parentNode
+
+            item.value = ''
+            fieldParent.classList.remove('error')
+         }
       }
    }
 

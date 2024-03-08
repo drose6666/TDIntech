@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-warehouse:before {
+  content: "\e910";
+}
 .i-angle_left:before {
   content: "\e900";
 }
