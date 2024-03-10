@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'TDIntech';
-  src:  url('/assets/fonts/TDIntech/font/TDIntech.eot?9ykzdq');
-  src:  url('/assets/fonts/TDIntech/font/TDIntech.eot?9ykzdq#iefix') format('embedded-opentype'),
-    url('/assets/fonts/TDIntech/font/TDIntech.ttf?9ykzdq') format('truetype'),
-    url('/assets/fonts/TDIntech/font/TDIntech.woff?9ykzdq') format('woff'),
-    url('/assets/fonts/TDIntech/font/TDIntech.svg?9ykzdq#TDIntech') format('svg');
+  src:  url('TDIntech/font/TDIntech.eot?9ykzdq');
+  src:  url('TDIntech/font/TDIntech.eot?9ykzdq#iefix') format('embedded-opentype'),
+    url('TDIntech/font/TDIntech.ttf?9ykzdq') format('truetype'),
+    url('TDIntech/font/TDIntech.woff?9ykzdq') format('woff'),
+    url('TDIntech/font/TDIntech.svg?9ykzdq#TDIntech') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

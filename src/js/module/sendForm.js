@@ -8,8 +8,8 @@ export default async function sendForm(form) {
          const phpHandlerUrl = "assets/libs/telegram.php";
 
          const response = await fetch(phpHandlerUrl, {
-         method: "POST",
-         body: new FormData(form),
+            method: "POST",
+            body: new FormData(form),
          });
 
          if (response.ok) {
