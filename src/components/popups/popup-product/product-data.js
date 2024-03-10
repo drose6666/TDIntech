@@ -7,10 +7,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/1/product_1.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/1/product_1_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/1/product_1_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/1/product_1.webp" alt="Клей для газобетона АртеМикс (25кг)">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -75,10 +75,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/2/product_2.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/2/product_2_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/2/product_2_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/2/product_2.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -133,10 +133,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/3/product_3.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/3/product_3_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/3/product_3_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/3/product_3.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -266,10 +266,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/4/product_4.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/4/product_4_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/4/product_4_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/4/product_4.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -415,10 +415,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/5/product_5.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/5/product_5_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/5/product_5_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/5/product_5.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -489,10 +489,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/6/product_6.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/6/product_6_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/6/product_6_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/6/product_6.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -560,10 +560,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/7/product_7.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/7/product_7_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/7/product_7_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/7/product_7.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -677,10 +677,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/8/product_8.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/8/product_8_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/8/product_8_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/8/product_8.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -799,10 +799,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/9/product_9.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/9/product_9_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/9/product_9_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/9/product_9.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -854,10 +854,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/10/product_10.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/10/product_10_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/10/product_10_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/10/product_10.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -932,10 +932,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/11/product_11.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/11/product_11_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/11/product_11_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/11/product_11.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1026,10 +1026,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/12/product_12.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/12/product_12_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/12/product_12_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/12/product_12.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1144,10 +1144,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/13/product_13.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/13/product_13_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/13/product_13_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/13/product_13.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1255,10 +1255,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/14/product_14.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/14/product_14_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/14/product_14_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/14/product_14.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1274,10 +1274,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/15/product_15.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/15/product_15_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/15/product_15_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/15/product_15.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1293,10 +1293,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/16/product_16.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/16/product_16_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/16/product_16_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/16/product_16.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1315,10 +1315,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/17/product_17.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/17/product_17_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/17/product_17_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/17/product_17.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1339,10 +1339,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/18/product_18.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/18/product_18_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/18/product_18_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/18/product_18.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1361,10 +1361,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/19/product_19.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/19/product_19_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/19/product_19_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/19/product_19.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1383,10 +1383,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/20/product_20.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/20/product_20_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/20/product_20_1060w.webp">
+                  <imge loading="lazy" src="assets/img/catalog/20/product_20.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1433,10 +1433,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/21/product_21.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/21/product_21_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/21/product_21_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/21/product_21.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1455,10 +1455,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/22/product_22.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/22/product_22_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/22/product_22_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/22/product_22.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1477,10 +1477,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/23/product_23.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/23/product_23_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/23/product_23_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/23/product_23.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1590,10 +1590,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/24/product_24.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/24/product_24_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/24/product_24_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/24/product_24.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1667,10 +1667,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/25/product_25.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/25/product_25_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/25/product_25_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/25/product_25.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1689,10 +1689,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/26/product_26.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/26/product_26_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/26/product_26_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/26/product_26.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1766,10 +1766,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/27/product_27.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/27/product_27_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/27/product_27_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/27/product_27.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1878,10 +1878,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/28/product_28.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/28/product_28_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/28/product_28_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/28/product_28.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1902,10 +1902,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/29/product_29.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/29/product_29_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/29/product_29_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/29/product_29.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -1989,10 +1989,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/30/product_30.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/30/product_30_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/30/product_30_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/30/product_30.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2063,10 +2063,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/31/product_31.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/31/product_31_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/31/product_31_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/31/product_31.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2099,10 +2099,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/32/product_32.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/32/product_32_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/32/product_32_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/32/product_32.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2118,10 +2118,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/33/product_33.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/33/product_33_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/33/product_33_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/33/product_33.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2137,10 +2137,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/34/product_34.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/34/product_34_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/34/product_34_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/34/product_34.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2174,10 +2174,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/35/product_35.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/35/product_35_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/35/product_35_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/35/product_35.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2213,10 +2213,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/36/product_36.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/36/product_36_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/36/product_36_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/36/product_36.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2272,10 +2272,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/37/product_37.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/37/product_37_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/37/product_37_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/37/product_37.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2311,10 +2311,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/38/product_38.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/38/product_38_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/38/product_38_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/38/product_38.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2334,10 +2334,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/39/product_39.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/39/product_39_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/39/product_39_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/39/product_39.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2357,10 +2357,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/40/product_40.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/40/product_40_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/40/product_40_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/40/product_40.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2380,10 +2380,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/41/product_41.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/41/product_41_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/41/product_41_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/41/product_41.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2403,10 +2403,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/42/product_42.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/42/product_42_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/42/product_42_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/42/product_42.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2425,10 +2425,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/43/product_43.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/43/product_43_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/43/product_43_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/43/product_43.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2447,10 +2447,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/44/product_44.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/44/product_44_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/44/product_44_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/44/product_44.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2469,10 +2469,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/45/product_45.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/45/product_45_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/45/product_45_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/45/product_45.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2491,10 +2491,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/46/product_46.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/46/product_46_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/46/product_46_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/46/product_46.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2513,10 +2513,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/47/product_47.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/47/product_47_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/47/product_47_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/47/product_47.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2535,10 +2535,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/48/product_48.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/48/product_48_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/48/product_48_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/48/product_48.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">
@@ -2554,10 +2554,10 @@ export const productData = [
          <div class="product-info__item flex-wrap">
             <div class="product-img">
                <picture>
-                  <source media="(max-width: 535px)" srcset="assets/img/catalog/product_1.webp">
-                  <source media="(max-width: 700px)" srcset="assets/img/catalog/product_1_700w.webp">
-                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/product_1_1060w.webp">
-                  <img src="assets/img/catalog/product_1.webp" alt="">
+                  <source media="(max-width: 535px)" srcset="assets/img/catalog/49/product_49.webp">
+                  <source media="(max-width: 700px)" srcset="assets/img/catalog/49/product_49_700w.webp">
+                  <source media="(max-width: 1060px)" srcset="assets/img/catalog/49/product_49_1060w.webp">
+                  <img loading="lazy" src="assets/img/catalog/49/product_49.webp" alt="">
                </picture>
             </div>
             <div class="descr-wrap">

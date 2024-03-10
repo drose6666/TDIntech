@@ -147,10 +147,27 @@
       }
 
       &__subtitle {
-         margin-bottom: 40px;
          font-size: 15px;
-         color: var(--light);
-         max-width: 550px;
+         color: var(--text_on_dark);
+         max-width: 840px;
+
+         strong {
+            font-weight: 700;
+            color: var(--light);
+         }
+      }
+   }
+
+   .contact-wrap {
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .socials {
+         display: contents;
       }
    }
 

@@ -1,9 +1,11 @@
-- let socialsWords = true
-
 - const socialsItem = [
 - {icon: 'telegram', link: '/', text: 'Telegram'},
 - {icon: 'whatsapp', link: '/', text: 'Whatsapp'}
 - ]
+- let darkCircleIcons = false
+
+- let phone = {text: '+7 911 459 24 73', link: 'tel:+79114592473', icon: 'i-phone'}
+- let actionPhone = false
 
 doctype html
 html(lang="en")
@@ -12,6 +14,7 @@ html(lang="en")
    body
       include ../components/ui/ui-preloader/ui-preloader
       include ../components/header/header
+         block phone
       include ../components/menu/mobile-menu/mobile-menu
          
 
@@ -19,6 +22,7 @@ html(lang="en")
          block main
       
       include ../components/screen/contact-screen/contact-screen
+         block phone
       include ../components/footer/footer
       include ../components/popups/popup-product/popup-product
       include ../components/popups/popup-call/popup-call

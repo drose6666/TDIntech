@@ -39,8 +39,19 @@
                   .value.item_text
       
       .product-action 
+
          .product-title Закажите #[strong прямо сейчас!]
-         .product-action__subtitle.ui-text Вы можете сделать заказ, заполнив форму ниже. Мы свяжемся с вами для уточнения деталей в ближайшее время
+         .product-action__subtitle.ui-text #[strong Сделайте заказ, заполнив форму ниже или любую другую форму на сайте.] Вы можете указать весь перечень товаров, которые хотите заказать, а также задать любые интересующие вопросы. Или напишите нам в мессенджерах, социальных сетях
+         
+         - darkCircleIcons = true
+         - actionPhone = false
+         .contact-wrap 
+            include ../../socials/socials-icons
+               block socials
+            include ../../ui/ui-phone-link/ui-phone-link
+               block phone
+         
+
          include ../../forms/product-form/product-form
 
    .popup-overlay

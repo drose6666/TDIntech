@@ -2,6 +2,11 @@
 @import 'mixin';
 @import 'functions';
 
+// VI
+@import '../../components/vi/vi-border-icon';
+@import '../../components/vi/vi-fill-icon';
+@import '../../components/vi/vi-swiper';
+
 // Components
 @import '../../components/header/header';
 @import '../../components/footer/footer';
@@ -19,11 +24,9 @@
 @import '../../components/ui/typography/typography';
 @import '../../components/ui/ui-close/ui-close';
 @import '../../components/ui/ui-scrollUp/ui-scrollUp';
+@import '../../components/ui/ui-phone-link/ui-phone-link';
 
-// VI
-@import '../../components/vi/vi-border-icon';
-@import '../../components/vi/vi-fill-icon';
-@import '../../components/vi/vi-swiper';
+
 
 @import '../../components/screen/contact-screen/contact-screen';
 

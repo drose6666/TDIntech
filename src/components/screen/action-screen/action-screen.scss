@@ -10,6 +10,7 @@
       margin-bottom: 30px;
       font-size: clamp(34px, 12cqi, 50px);
       color: var(--light);
+      max-width: 1120px;
 
       strong {
          font-weight: 700;                  
@@ -26,61 +27,6 @@
       margin-top: clamp(60px, 15cqi, 90px);
       display: flex;
       gap: 40px;
-      
-      .action-phone {
-         display: flex;
-         align-items: center;
-         gap: 15px;
-         transition: all .3s ease;
-
-         .icon {
-            $size: 60px;
-
-            width: $size;
-            height: $size;
-            flex: 0 0 $size;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--light);
-            border-radius: var(--circleR);
-
-            i {
-               font-size: 30px;
-               color: var(--dark);
-            }
-         }
-
-         span {
-            font-size: 20px;
-            font-weight: 700;
-            color: var(--light);
-            white-space: nowrap;
-            position: relative;
-            transition: inherit;
-         
-            &:after {
-               content: '';
-               position: absolute;
-               left: 0;
-               bottom: -5px;
-               width: 0;
-               height: 1px;
-               background: var(--light);
-               transition: inherit;
-            }
-         }
-
-         &:hover {
-            span {
-               color: var(--action);
-
-               &:after {
-                  width: 100%;
-               }
-            }
-         }
-      }
    }
 
    @media all and (max-width: 870px) {
@@ -92,10 +38,12 @@
    @media all and (max-width: 550px) {
       .btn-group {
          flex-direction: column;
+         align-items: flex-start;
          gap: 20px;
 
          .ui-btn {
             max-width: 350px;
+            width: 100%;
          }
       }
    }

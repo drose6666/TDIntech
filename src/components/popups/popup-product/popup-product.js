@@ -4,21 +4,18 @@ import { productData } from './product-data.js';
 
 const openProductBtns = document.querySelectorAll('.btn_product')
 const productInfo = document.querySelector('#popup-product .product-info')
-const productHiddenField = document.querySelector('#product-form [type="hidden"]')
 
 openProductBtns.forEach(btn => {
    btn.addEventListener('click', () => {
       let currentIDBtn = btn.dataset.id
       productInfo.innerHTML = ''
-      productHiddenField.value = ''
 
       if (currentIDBtn) {
          let currentProduct = productData.find(item => item.id == currentIDBtn)
          
-         if (currentProduct) {
+         if (currentProduct) 
             productInfo.insertAdjacentHTML('afterbegin', currentProduct.content)
-            productHiddenField.value = `Сообщение по товару ${currentProduct.title}`
-         }
+         
       }
    })
 })

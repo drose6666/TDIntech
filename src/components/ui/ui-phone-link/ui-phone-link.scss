@@ -1,0 +1,88 @@
+.ui-phone-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+
+   .icon {
+      @include fillIconTheme (
+         $size: 45px,
+         $bg: var(--bg_on_dark),
+         $iconSize: 18px,
+         $bgH: var(--action),
+         $iconC: var(--action),
+         $iconCH: var(--dark),
+      );
+   }
+
+   span {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--light);
+      position: relative;
+      white-space: nowrap;
+      transition: all .3s ease;
+
+      &:after {
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: -3px;
+         height: 1px;
+         width: 0;
+         background: var(--light);
+         transition: inherit;
+      }
+   }
+
+   &:hover {
+      span {
+         color: var(--action);
+
+         &::after {
+            width: 100%;
+         }
+      }
+
+      .icon {
+         border-color: var(--action);
+
+         &:after {
+            background: var(--action)
+         }
+
+         i {
+            color: var(--dark)
+         }
+
+         @extend %viFillIconHover;
+      }
+   }
+
+   &.actionPhone {
+      .icon {
+         @include fillIconTheme (
+            $size: 60px,
+            $iconSize: 25px,
+            $bgH: var(--light),
+            $iconCH: var(--dark),
+         );
+      }
+
+      span {
+         font-size: 20px;
+      }
+
+      &:hover {
+         .icon {
+            border-color: var(--light);
+            @extend %viFillIconHover;
+         }
+
+         span {
+            color: var(--action);
+         }
+      }
+   }
+
+}

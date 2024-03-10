@@ -1,5 +1,5 @@
 %viFillIconHover {
-   $size: 77.78%;
+   $size: 77%;
 
    &:after {
       width: $size;
@@ -7,14 +7,45 @@
    }
 }
 
-// NOTE общие стили для круглых иконок
-.vi-fill-icon {
-   $size: 60px;
-   $bg: var(--light);
-
+@mixin fillIconTheme (
+   $size: 60px,
+   $bg: var(--light),
+   $bgH: var(--light),
+   $iconSize: 25px,
+   $iconC: var(--dark),
+   $iconCH: var(--dark),
+   
+) {
    width: $size;
    height: $size;
    flex: 0 0 $size;
+
+   i {
+      font-size: $iconSize;
+      color:  $iconC;
+   }
+
+   &:after {
+      background: $bg;
+   }
+
+   &:hover {
+      border-color: $bgH;
+
+      &:after {
+         width: 77%;
+         height: 77%;
+         background: $bgH;
+      }
+
+      i {
+         color: $iconCH;
+      }
+   }
+}
+
+// NOTE общие стили для круглых иконок
+.vi-fill-icon {
    border-radius: var(--circleR);
    background: transparent;
    border: 1px solid transparent;
@@ -26,8 +57,6 @@
    transition: all .3s ease;
 
    i {
-      font-size: 25px;
-      color: var(--dark);
       position: relative;
       z-index: 1;
       transition: inherit;
@@ -39,90 +68,19 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      background: $bg;
       border-radius: var(--circleR);
+      width: 103%;
+      height: 103%;
       transition: inherit;
    }
 
-   // В карточке товара
-   &.product_icon {
-      $bg: var(--dark);
-      $size: clamp(55px, 5cqb, 60px);
-
-      position: absolute;
-      right: 15px;
-      top: -45px;
-      width: $size;
-      height: $size;
-      flex: 0 0 $size;
-      box-shadow: var(--btn_dark);
-
-      i {
-         font-size: clamp(15px, 8cqi, 20px);
-         color: var(--action);
-      }
-
-      &:after {
-         $sizeB: calc(100% + 2px);
-
-         background: $bg;
-         width: $sizeB;
-         height: $sizeB;
-      }
-
-      &:hover {
-         border-color: $bg;
-         box-shadow: none;
-            
-         @extend %viFillIconHover;
-      }
-   }
-
    &.ui-scrollUp {
-      $size: 45px;
-
-      width: $size;
-      height: $size;
-      flex: 0 0 $size;
-
-      &:after {
-         background: var(--light);
-      }
-
-      i {
-         font-size: 16px;
-         color: var(--dark);
-      }
-
-      &:hover {
-         border-color: var(--dark);
-         box-shadow: none;
-
-         &:after {
-            background: var(--dark);
-         }
-
-         i {
-            color: var(--action)
-         }
-            
-         @extend %viFillIconHover;
-      }
+      @include fillIconTheme (
+         $size: 45px,
+         $iconSize: 16px,
+         $bgH: var(--dark),
+         $iconCH: var(--action),
+      );
    }
 }
 
-
-// В секции artemix-screen
-.action-screen {
-   .hover_parent {
-      &:hover {
-         .vi-fill-icon {
-            border-color: var(--light);
-            
-            @extend %viFillIconHover;
-         }
-      }
-   }
-}

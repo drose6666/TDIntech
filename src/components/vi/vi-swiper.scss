@@ -16,32 +16,44 @@
 
 // Стрелки
 .swiper-arrow {
-   $size: 50px;
-
-   width: $size;
-   height: $size;
-   border-radius: var(--circleR);
-   border: 1px solid var(--light);
+   @include fillIconTheme (
+      $size: 50px,
+      $bg: var(--light),
+      $iconSize: 18px,
+      $bgH: var(--dark),
+      $iconC: var(--dark),
+      $iconCH: var(--action),
+   );
    position: absolute;
    top: 40%;
-   cursor: pointer;
    z-index: 1;
-   transition: all .3s ease;
 
-   &:before {  
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 103%;
-      height: 103%;
-      background: var(--light);
-      border-radius: var(--circleR);
-      transition: inherit;
-   }
+   // $size: 50px;
 
-   &:after {
+   // width: $size;
+   // height: $size;
+   // border-radius: var(--circleR);
+   // border: 1px solid var(--light);
+   // position: absolute;
+   // top: 40%;
+   // cursor: pointer;
+   // z-index: 1;
+   // transition: all .3s ease;
+
+   // &:after {  
+   //    content: '';
+   //    position: absolute;
+   //    top: 50%;
+   //    left: 50%;
+   //    transform: translate(-50%, -50%);
+   //    width: 103%;
+   //    height: 103%;
+   //    background: var(--light);
+   //    border-radius: var(--circleR);
+   //    transition: inherit;
+   // }
+
+   &:before {
       font-family: var(--icon_font);
       font-size: 18px;
       display: inline-block;
@@ -49,6 +61,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 1;
       transition: inherit;
    }
 
@@ -57,7 +70,7 @@
       right: -15px;
       transform: translateY(-50%);
 
-      &:after { 
+      &:before { 
          content: '\e901'; 
          margin-left: 1px;
       }
@@ -68,7 +81,7 @@
       left: -15px;
       transform: translateY(-50%);
 
-      &:after { 
+      &:before { 
          content: '\e900'; 
          margin-left: -1px;
       }
@@ -81,11 +94,11 @@
 
       border-color: $bg;
 
-      &:before {
+      &:after {
          background: $bg;
       }
 
-      &:after {
+      &:before {
          color: var(--light);
       }
    }
@@ -102,15 +115,15 @@
    }
 
    &:hover {
-      border-color: var(--dark);
+      // border-color: var(--dark);
+
+      // &:after {
+      //    background: var(--dark);
+      //    width: 77%;
+      //    height: 77%;
+      // }
 
       &:before {
-         background: var(--dark);
-         width: 77%;
-         height: 77%;
-      }
-
-      &:after {
          color: var(--action);
       }
    }
