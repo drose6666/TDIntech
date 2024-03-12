@@ -97,23 +97,23 @@
 #popup-product {
    .socials {
       gap: 10px;
+   }
 
-      .socials__link {
-         @include fillIconTheme (
-            $size: 45px,
-            $bg: var(--bg_on_dark),
-            $iconSize: 18px,
-            $bgH: var(--action),
-            $iconC: var(--action),
-            $iconCH: var(--dark),
-         );
+   .socials__link {
+      @include fillIconTheme (
+         $size: 45px,
+         $bg: var(--bg_on_dark),
+         $iconSize: 18px,
+         $bgH: var(--action),
+         $iconC: var(--action),
+         $iconCH: var(--dark),
+      );
 
-         border: 1px solid transparent;
-         transition: all .3s ease;
+      border: 1px solid transparent;
+      transition: all .3s ease;
 
-         &:hover {
-            transform: none;
-         }
+      &:hover {
+         transform: none;
       }
    }
 }

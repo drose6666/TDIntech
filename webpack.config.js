@@ -86,7 +86,7 @@ const config = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|jpeg|webp|ico|gif)$/,
                 type: "asset/resource",
                 generator: {
                     filename: "assets/img/[name][ext]",
